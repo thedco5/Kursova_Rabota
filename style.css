@@ -21,6 +21,9 @@ aside{
   font-weight: 600;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+a{
+  text-decoration: none;
+}
 .nav-links{
 flex: 1;
 text-align: right;
@@ -52,6 +55,12 @@ position: relative;
 nav .fa{
   display: none;
 }
+ label .fa{
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  margin-right: 5px;
+ }
 /*
 
 */
@@ -81,7 +90,7 @@ nav .fa{
     nav .fa{
     display: block;
     color: #fff;
-    margin-left: 200px;
+    margin-left: 100px;
     font-size: 22px;
     cursor: pointer;
   }

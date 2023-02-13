@@ -20,11 +20,19 @@
         <div class="nav-links" id="navLinks">
           <i class="fa fa-times" onclick="hideMenu()"></i>
           <a href="">КАТЕГОРИЯ</a> |
+          <a href="">ВХОД</a> |
           <a href="">ЗА НАС</a> |
           <a href="">КОНТАКТИ</a> |
           <a href="temp_prof.html">МОЯТ ПРОФИЛ</a>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        <label for="language"><i class="fa fa-cog"></i></label>
+        <select name="language" id="language" onchange="location=this.value;">
+          <option value="" hidden disabled selected>-</option>
+          <option value="index.html">🇧🇬 Бг</option>
+          <option value="other_languages/en/index.html">🇺🇸 Анг</option>
+        </select>
       </nav>
     </aside>
   </header>
