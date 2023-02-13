@@ -24,6 +24,7 @@
                             // inserting the new profile
                             Utils::add_user($pdo, $_POST["username"], $_POST["password"]);
                             echo "<span class='user_added'>Успешно е добавен нов потребител!</span> <br>";
+                            echo "<a href='sign_in.html'>Към влизане?</a><br>";
                         }
                     } catch (Exception $e) {
                         echo "<span class='error'>Има грешка!</span>";
