@@ -7,15 +7,15 @@ header{
 aside{
   background-image: linear-gradient(rgba(4, 9, 20, 0.04),rgba(4, 9, 20, 0.692)), url(images/red.png);
 }
-aside nav{
+ nav{
   display: flex;
-  padding: 15px 40px;
+  padding: 16px 40px;
   align-items: center;
 }
-aside nav img{
+ img{
   width:60px;
 }
-aside nav h1{
+ h1{
   color: white;
   font-size: 25px;
   font-weight: 600;
@@ -49,6 +49,47 @@ position: relative;
 .nav-links a:active{
   opacity: 0.5;
 }
+nav .fa{
+  display: none;
+}
 /*
 
 */
+@media (max-width: 700px){
+  nav{
+    display: flex;
+    padding: 5px 10px;
+    align-items: center;
+  }
+   img{
+    width:40px;
+  }
+    h1{
+    font-size: 18px;
+  }
+  .nav-links{
+    position:absolute;
+    background-image: linear-gradient(rgba(234, 140, 18, 0.542),rgba(238, 184, 37, 0.81)), url(images/red.png);
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right:-200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+    nav .fa{
+    display: block;
+    color: #fff;
+    margin-left: 200px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  nav .nav-links .fa{
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+}
