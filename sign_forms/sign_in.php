@@ -27,7 +27,7 @@
                         } else {
                             $relog = true;
                             echo "<span class='no_such_user'>Потребителят не съществува!</span> <br>";
-                            echo "<a href='sign_up.html'>Към регистриране?</a><br>";
+                            echo "<a href='sign_up.php'>Към регистриране?</a><br>";
                         }
                     } catch (Exception $e) {
                         echo "<span class='error'>Има грешка!</span>";
