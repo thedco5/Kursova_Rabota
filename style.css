@@ -1,0 +1,54 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
+header{
+  position: relative;
+} 
+aside{
+  background-image: linear-gradient(rgba(4, 9, 20, 0.04),rgba(4, 9, 20, 0.692)), url(images/red.png);
+}
+aside nav{
+  display: flex;
+  padding: 15px 40px;
+  align-items: center;
+}
+aside nav img{
+  width:60px;
+}
+aside nav h1{
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav-links{
+flex: 1;
+text-align: right;
+color: white;
+position: relative;
+}
+.nav-links a{
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  padding: 6px 10px;
+}
+.nav-links  a::after{
+  content: ''; /*replaces an element with a generated value*/
+  width: 0;
+  height: 2.5px;
+  background:rgb(255, 203, 140);
+  display: block;
+  margin: auto; /*make the line from the center*/
+  transition: 0.5s;
+}
+.nav-links a:hover::after{
+  width: 100%;
+}
+.nav-links a:active{
+  opacity: 0.5;
+}
+/*
+
+*/
