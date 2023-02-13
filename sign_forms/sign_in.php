@@ -41,7 +41,7 @@
                     if ($relog) echo "value='" . $_POST["username"] . "'";
                     else echo "placeholder='Потребителско име'";
                 ?> pattern="^[A-Za-z0-9_]{4,15}$" required> <br>
-                <input type="text" name="password" placeholder="Парола" pattern="^[A-Za-z0-9_]{4,8}$" required> <br>
+                <input type="password" name="password" placeholder="Парола" pattern="^[A-Za-z0-9_]{4,8}$" required> <br>
                 <button type="submit">Влезте <?php
                     if ($_POST) echo "отново";
                 ?></button>
