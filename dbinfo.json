@@ -1,0 +1,8 @@
+{
+    "basic" : {
+        "host" : "localhost",
+        "dbname" : "maindb",
+        "username" : "root",
+        "password" : "msqlroot"
+    }
+}
