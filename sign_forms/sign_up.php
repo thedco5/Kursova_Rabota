@@ -26,9 +26,7 @@
                             echo "<span class='user_added'>Успешно е добавен нов потребител!</span> <br>";
                             echo "<a href='sign_in.php'>Към влизане?</a><br>";
                         }
-                    } catch (Exception $e) {
-                        echo "<span class='error'>Има грешка!</span>";
-                    }
+                    } catch (Exception $e) { Utils::error_message(); }
                 }
             ?>
             <h3>Регистрация</h3>

@@ -29,9 +29,7 @@
                             echo "<span class='no_such_user'>Потребителят не съществува!</span> <br>";
                             echo "<a href='sign_up.php'>Към регистриране?</a><br>";
                         }
-                    } catch (Exception $e) {
-                        echo "<span class='error'>Има грешка!</span>";
-                    }
+                    } catch (Exception $e) { Utils::error_message(); }
                 }
             ?>
             <h3>Вход</h3>
