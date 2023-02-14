@@ -11,5 +11,8 @@
             $sql .= password_hash($password, PASSWORD_DEFAULT) . "');";
             $pdo->query($sql);
         }
-    }
+        static function error_message() : void {
+            echo "<span class='error'>There's an error!</span>";
+        }
+    }   
 ?>
