@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
         <title>Влизане</title>
     </head>
     <body>
@@ -20,8 +21,8 @@
                         if ($res) {
                             if (password_verify($_POST["password"], $res[0]["password"])) {
                                 // echo "<span class='password_right'>Успешно „влизане“ като " . $_POST["username"] . "!</span> <br>";
-                                setcookie("username", $_POST["username"], time() + 10, "/");
-                                header("Location: ../temp_prof.html");
+                                setcookie("usr", $_POST["username"], 2147483647, "/");
+                                header("Location: ../index.html");
                             }  
                             else echo "<span class='password_wrong'>Грешна парола!</span> <br>";
                         } else {
