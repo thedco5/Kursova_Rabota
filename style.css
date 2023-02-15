@@ -2,17 +2,19 @@
 	font-family: 'Poppins', sans-serif;
 }
 
+/* NAVIGATION BAR */
+
 header {
 	position: relative;
 }
 
 aside {
 	background-image: linear-gradient(rgba(4, 9, 20, 0.04), rgba(4, 9, 20, 0.692)), url(images/red.png);
+
 }
 
 nav {
 	display: flex;
-	padding: 16px 40px;
 	align-items: center;
 }
 
@@ -20,11 +22,12 @@ img {
 	width: 60px;
 }
 
-h1 {
+.logoh1 {
 	color: white;
 	font-size: 25px;
 	font-weight: 600;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0
 }
 
 a {
@@ -32,7 +35,7 @@ a {
 }
 
 .nav-links {
-	flex: 1;
+  flex: 1;
 	text-align: right;
 	color: white;
 	position: relative;
@@ -67,28 +70,43 @@ a {
 }
 
 .language {
-	color: #fff;
-	background-color: rgba(0,0,0,0);
-	border: none;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
 }
 
-.language option {
-	color: #000;
+.language option{
+  color: #000;
 }
 
 nav .fa {
 	display: none;
 }
 
-label .fa {
-	color: #fff;
-	display: block;
-	font-size: 18px;
-	margin-right: 5px;
+/* MAIN */
+
+
+/* FOOTER */
+
+footer{
+  text-align: center;
+  font-size: small;
+	position: relative;
 }
 
-/*
-*/
+footer p{
+	background-color: rgb(255, 203, 140);
+}
+
+.icons .fa{
+  color: #f44336;
+  margin: 0 13px;
+  cursor : pointer;
+  padding: 18px 0;
+}
+
+/* MEDIA */
+
 @media (max-width: 700px) {
 	nav {
 		display: flex;
@@ -100,14 +118,14 @@ label .fa {
 		width: 40px;
 	}
 
-	h1 {
+	.logoh1 {
 		font-size: 18px;
 	}
 
 	.nav-links {
 		position: absolute;
 		background-image: linear-gradient(rgba(234, 140, 18, 0.542), rgba(238, 184, 37, 0.81)), url(images/red.png);
-		height: 100vh;
+		height: 100vh;  /* view hight */
 		width: 200px;
 		top: 0;
 		right: -200px;
@@ -119,7 +137,7 @@ label .fa {
 	nav .fa {
 		display: block;
 		color: #fff;
-		margin-left: 100px;
+		margin-left: 230px;
 		font-size: 22px;
 		cursor: pointer;
 	}
