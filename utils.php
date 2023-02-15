@@ -1,4 +1,5 @@
 <?php
+    session_start();
     class Utils {
         static function get_user(PDO $pdo, String $username) : array {
             return $pdo->query("SELECT * FROM profiles WHERE username LIKE '$username';")->fetchAll(PDO::FETCH_ASSOC);
@@ -9,9 +10,7 @@
             $pdo->query($sql);
         }
         static function set_user(String $username, String $link) : void {
-            session_start();
             $_SESSION["usr"] = $_POST["username"];
-            session_abort();
             header("Location: $link");
         }
         static function error_message(int $n) : void {
