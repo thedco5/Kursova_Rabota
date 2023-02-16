@@ -7,7 +7,7 @@
         static function add_user(PDO $pdo, String $username, String $password) : void {
             $sql = "INSERT INTO profiles (username, password) VALUES ('$username', '";
             $sql .= password_hash($password, PASSWORD_DEFAULT) . "');";
-            $pdo->query($sql);
+            $pdo->query($sql); // lesno
         }
         static function set_user(String $username, String $link) : void {
             $_SESSION["usr"] = $_POST["username"];
