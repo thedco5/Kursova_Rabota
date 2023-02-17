@@ -30,6 +30,10 @@ img {
 	margin: 0
 }
 
+nav h1 {
+	color: white;
+}
+
 a {
 	text-decoration: none;
 }
