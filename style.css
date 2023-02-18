@@ -1,43 +1,34 @@
 * {
+	margin: 0;
+	padding: 0;
 	font-family: 'Poppins', sans-serif;
 }
 
 /* NAVIGATION BAR */
 
 header {
+	height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/kitchen.png);
+	background-position: center;
+	background-size: cover;
 	position: relative;
-}
-
-aside {
-	background-image: linear-gradient(rgba(4, 9, 20, 0.04), rgba(4, 9, 20, 0.692)), url(images/red.png);
-
 }
 
 nav {
 	display: flex;
-	align-items: center;
 }
 
 img {
-	width: 60px;
+	width: 150px;
 }
 
-.logoh1 {
-	color: white;
-	font-size: 25px;
-	font-weight: 600;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	margin: 0
-}
 
-nav h1 {
-	color: white;
-}
 
 a {
 	text-decoration: none;
 }
-
+			
 .nav-links {
   flex: 1;
 	text-align: right;
@@ -46,11 +37,13 @@ a {
 }
 
 .nav-links a {
+	font-family:Arial, Helvetica, sans-serif;
 	display: inline-block;
-	color: #fff;
+	color: #ffffff;
+	font-weight: 550;
 	text-decoration: none;
-	font-size: 13px;
-	padding: 6px 10px;
+	font-size: 14px;
+	padding: 40px 20px;
 }
 
 .nav-links a::after {
@@ -58,7 +51,7 @@ a {
 	/*replaces an element with a generated value*/
 	width: 0;
 	height: 2.5px;
-	background: rgb(255, 203, 140);
+	background: red;
 	display: block;
 	margin: auto;
 	/*make the line from the center*/
@@ -119,16 +112,12 @@ footer p{
 	}
 
 	img {
-		width: 40px;
-	}
-
-	.logoh1 {
-		font-size: 18px;
+		width: 150px;
 	}
 
 	.nav-links {
 		position: absolute;
-		background-image: linear-gradient(rgba(234, 140, 18, 0.542), rgba(238, 184, 37, 0.81)), url(images/red.png);
+		background-color: rgb(201, 174, 0);
 		height: 100vh;  /* view hight */
 		width: 200px;
 		top: 0;
@@ -137,6 +126,13 @@ footer p{
 		z-index: 2;
 		transition: 1s;
 	}
+
+	.nav-links a {	
+		display: block;
+		font-size: 14px;
+		padding: 10px 10px;
+	}
+	
 
 	nav .fa {
 		display: block;

@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="bg">
 	<head>
@@ -8,29 +7,28 @@
 		<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<title> Food For Foodies </title>
+		<title>Food For Foodies</title>
 	</head>
 	<body>
+		<!-- NAVIGATION BAR -->
 		<header>
 			<aside>
 				<nav>
-					<a href="."><img src="images/logo.png" alt="logo"></a>
-					<h1> Food4Foodies </h1>
-					<div class="nav-links">
+					<a href="index.html"><img src="images/logo.png" alt="logo"></a>
+					<div class="nav-links" id="navLinks">
 						<i class="fa fa-times" onclick="hideMenu()"></i>
-						<select class="language" onchange="location = this.value">
-							<!-- <option value="" hidden disabled selected>-</option>-->
-							<option value="." selected>БГ</option>
-							<option value="other_languages/en/index.php">EN</option>
-						</select> |
-						<a href=".">НАЧАЛО</a> |
-						<a href="">ЗА НАС</a> |
-						<a href= <?php
+						<select class="language" onchange="location=this.value;">
+							<option value="index.html" selected>БГ</option>
+							<option value="other_languages/en/index.html">EN</option>
+						</select> 
+						<a href="">НАЧАЛО</a> 
+						<a href="">ЗА НАС</a> 
+					  <a href= <?php
 							if(isset($_SESSION["usr"]))
 								echo "'profile.php'>" . $_SESSION["usr"];
 							else
 								echo "'forms/login.php'>ВХОД";
-						?> </a> |
+						?> </a>
 						<a href= <?php
 							if(isset($_SESSION["usr"]))
 								echo "'forms/signout.php'>ИЗХОД";
@@ -38,15 +36,25 @@
 								echo "'forms/register.php'>РЕГИСТРАЦИЯ";
 						?> </a>
 					</div>
-					<i class="fa fa-bars" onclick="showMenu()"></i>
 				</nav>
 			</aside>
 		</header>
 
 		<main>
-			
 		</main>
 
-		<script src="script.js"> </script>
+		<footer>
+			<div class="icons">
+				<i class="fa fa-facebook"></i>
+				<i class="fa fa-twitter"></i>
+				<i class="fa fa-instagram"></i>
+				<i class="fa fa-snapchat"></i>
+				<i class="fa fa-linkedin"></i>
+			</div>
+			<p>&copy;2023 Food4Foodies.com Всички права запазени.</p>
+		</footer>
+		
+		<!-- JS -->
+		<script src="main_script.js"></script>
 	</body>
 </html>
