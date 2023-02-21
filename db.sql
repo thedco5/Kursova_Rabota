@@ -38,7 +38,7 @@ CREATE TABLE `profiles` (
 
 LOCK TABLES `profiles` WRITE;
 /*!40000 ALTER TABLE `profiles` DISABLE KEYS */;
-INSERT INTO `profiles` VALUES (1,'admin','$2y$10$eX4Byfz5uKerFU49hqP7M.SZXtZHJx.0iNrsyjdLfUI/DO.ylxA4O'),(2,'testuser','$2y$10$.gdmw4CxqQffbxzSOFzxpORHMk9v4VRlWqeuKwWujUuN3kCaEiLVq'),(15,'pep40','$2y$10$X9e1JiyGtqG9KuxmzmRen.XcZjlwpn/.pdEXcFBmRiTykgsqaxksa');
+INSERT INTO `profiles` VALUES (1,'admin','$2y$10$eX4Byfz5uKerFU49hqP7M.SZXtZHJx.0iNrsyjdLfUI/DO.ylxA4O');
 /*!40000 ALTER TABLE `profiles` ENABLE KEYS */;
 UNLOCK TABLES;
 
