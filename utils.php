@@ -13,6 +13,10 @@
             $_SESSION["usr"] = $_POST["username"];
             header("Location: $link");
         }
+        static function current_user() : String {
+            if (isset($_SESSION["usr"])) return $_SESSION["usr"];
+            else return null;
+        }
         static function error_message(int $n) : void {
             echo "<br> <span class='error'>There's an error! :: $n</span> <br>";
         }
