@@ -13,7 +13,7 @@
             $_SESSION["usr"] = $_POST["username"];
             header("Location: $link");
         }
-        static function current_user() : String {
+        static function current_user() {
             if (isset($_SESSION["usr"])) return $_SESSION["usr"];
             else return null;
         }
