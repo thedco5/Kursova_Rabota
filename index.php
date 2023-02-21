@@ -1,3 +1,4 @@
+<?php include "utils.php"; ?>
 <!DOCTYPE html>
 <html lang="bg">
 	<head>
@@ -24,8 +25,8 @@
 						<a href="">НАЧАЛО</a> 
 						<a href="">ЗА НАС</a> 
 					  <a href= <?php
-							if(isset($_SESSION["usr"]))
-								echo "'profile.php'>" . $_SESSION["usr"];
+							if(Utils::current_user())
+								echo "'profile.php'>" . Utils::current_user();
 							else
 								echo "'forms/login.php'>ВХОД";
 						?> </a>
