@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="loginForm.css">
+</head>
+<body>
+  <div class="form-box">
+    <div class="button-box">
+      <div id="btn"></div>
+
+      <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+      <button type="button" class="toggle-btn" onclick="register()">Register</button>
+    </div>
+
+    <form id="login" action="." method="get" class="input-group">
+      <input type="text" class="input-field" placeholder="Username" required>
+      <input type="password" class="input-field" placeholder="Password" required>
+      <input type="checkbox" class="check-box"><span>Remember Password</span>
+      <button type="submit" class="submit-btn">Log in</button>
+    </form>
+
+    <form id="register" action="." method="get" class="input-group">
+      <input type="text" class="input-field" placeholder="Username" required>
+      <input type="email" class="input-field" placeholder="Email" required>
+      <input type="password" class="input-field" placeholder="Password" required>
+      <input type="password" class="input-field" placeholder="Retype password" required>
+      <input type="checkbox" class="check-box" ><span>I agree to terms & conditions</span>
+      <button type="submit" class="submit-btn">Register</button>
+    </form>
+
+  </div>  
+
+  <script>
+    var x = document.getElementById('login');
+    var y = document.getElementById('register');
+    var z = document.getElementById('btn');
+
+    function register(){
+      x.style.left = "-450px";
+      y.style.left = "50px";
+      z.style.left = "110px"
+    } 
+
+    function login(){
+      x.style.left = "50px";
+      y.style.left = "450px";
+      z.style.left = "0px"
+    } 
+
+  </script>
+
+</body>
+</html>
