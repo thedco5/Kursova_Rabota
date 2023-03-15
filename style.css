@@ -111,8 +111,9 @@ footer p{
 		align-items: center;
 	}
 
-	img {
+	 nav img {
 		width: 150px;
+		margin-top: -21px;
 	}
 
 	.nav-links {
@@ -133,11 +134,11 @@ footer p{
 		padding: 10px 10px;
 	}
 	
-
 	nav .fa {
 		display: block;
 		color: #fff;
-		margin-left: 230px;
+		margin-left: 210px;
+		margin-top: -50px;
 		font-size: 22px;
 		cursor: pointer;
 	}

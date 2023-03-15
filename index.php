@@ -15,12 +15,12 @@
 		<header>
 			<aside>
 				<nav>
-					<a href="index.html"><img src="images/logo.png" alt="logo"></a>
+					<a href="index.php"><img src="images/logo.png" alt="logo"></a>
 					<div class="nav-links" id="navLinks">
 						<i class="fa fa-times" onclick="hideMenu()"></i>
 						<select class="language" onchange="location=this.value;">
-							<option value="index.html" selected>БГ</option>
-							<option value="other_languages/en/index.html">EN</option>
+							<option value="index.php" selected>БГ</option>
+							<option value="other_languages/en/index.php">EN</option>
 						</select> 
 						<a href="">НАЧАЛО</a> 
 						<a href="">ЗА НАС</a> 
@@ -37,6 +37,7 @@
 								echo "'forms/register.php'>РЕГИСТРАЦИЯ";
 						?> </a>
 					</div>
+					<i class="fa fa-bars" onclick="showMenu()"></i>
 				</nav>
 			</aside>
 		</header>
@@ -56,6 +57,8 @@
 		</footer>
 		
 		<!-- JS -->
-		<script src="main_script.js"></script>
+
+		<script src="script.js"></script>
+
 	</body>
 </html>
