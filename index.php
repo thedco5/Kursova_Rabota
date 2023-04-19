@@ -12,10 +12,11 @@
 	</head>
 	<body>
 		<!-- NAVIGATION BAR -->
+		<div class="content">
 		<header>
 			<aside>
 				<nav>
-					<a href="index.php"><img src="images/logo.png" alt="logo"></a>
+					<a href="index.php"><img src="images/cook_logo2.png" alt="logo"></a>
 					<div class="nav-links" id="navLinks">
 						<i class="fa fa-times" onclick="hideMenu()"></i>
 						<select class="language" onchange="location=this.value;">
@@ -40,6 +41,12 @@
 					<i class="fa fa-bars" onclick="showMenu()"></i>
 				</nav>
 			</aside>
+			
+			<div class="text-box">
+              <h3>Worl\rsity</h>
+              <p>st thing in the world.</p>
+              <a href="" class="hero-btn">Visit Us To Know More</a>
+            </div>
 		</header>
 
 		<main>
@@ -59,6 +66,7 @@
 		<!-- JS -->
 
 		<script src="script.js"></script>
-
+		
+</div>
 	</body>
 </html>

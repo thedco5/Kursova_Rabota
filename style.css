@@ -1,26 +1,35 @@
+
 * {
 	margin: 0;
 	padding: 0;
 	font-family: 'Poppins', sans-serif;
 }
 
+.content{
+position: relative;
+}
+
 /* NAVIGATION BAR */
 
 header {
-	height: 100vh;
-	width: 100%;
-	background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/kitchen.png);
-	background-position: center;
-	background-size: cover;
-	position: relative;
+	height: 95vh;
+	background-image: linear-gradient(rgba(1, 2, 6, 0.3), rgba(0, 1, 2, 0.4)), url(images/kitchen_plot.jpg);
+	background-position:center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size:cover;
+	box-sizing: border-box;
 }
 
 nav {
-	display: flex;
+	/*display: flex;*/
+	background-color: #00000026;
 }
 
 img {
+	margin-top: 4px;
 	width: 150px;
+	height: 40px;
 }
 
 
@@ -30,10 +39,16 @@ a {
 }
 			
 .nav-links {
-  flex: 1;
-	text-align: right;
+	float: right;
+	/*flex:1; text-align: right;*/
+  /*flex: 1 means the following:
+  flex-grow : 1;    ➜ The div will grow in same proportion as the window-size       
+  flex-shrink : 1;  ➜ The div will shrink in same proportion as the window-size 
+  flex-basis : 0;   ➜ The div does not have a starting value as such and will 
+					   take up screen as per the screen size available for
+					   e.g:- if 3 divs are in the wrapper then each div will take 33%.*/
+					
 	color: white;
-	position: relative;
 }
 
 .nav-links a {
@@ -42,8 +57,8 @@ a {
 	color: #ffffff;
 	font-weight: 550;
 	text-decoration: none;
-	font-size: 14px;
-	padding: 40px 20px;
+	font-size: 16px;
+	padding: 14px 20px 0 20px;
 }
 
 .nav-links a::after {
@@ -80,19 +95,29 @@ nav .fa {
 	display: none;
 }
 
-/* MAIN */
-
-
+.text-box{
+	box-sizing: border-box;
+}
+.text-box{
+	position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 30%;
+            padding:20px;
+            background-color: rgba(0, 0, 0, 0.249);
+            color: white;
+            text-align: center;
+}
 /* FOOTER */
 
 footer{
   text-align: center;
   font-size: small;
-	position: relative;
 }
 
 footer p{
-	background-color: rgb(255, 203, 140);
+	background-color: rgba(255, 203, 140, 0.74);
 }
 
 .icons .fa{
@@ -137,7 +162,7 @@ footer p{
 	nav .fa {
 		display: block;
 		color: #fff;
-		margin-left: 210px;
+		margin-left: 250px;
 		margin-top: -50px;
 		font-size: 22px;
 		cursor: pointer;
