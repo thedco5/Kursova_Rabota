@@ -12,7 +12,7 @@ position: relative;
 /* NAVIGATION BAR */
 
 header {
-	height: 95vh;
+	height: 100vh;
 	background-image: linear-gradient(rgba(1, 2, 6, 0.3), rgba(0, 1, 2, 0.4)), url(images/kitchen_plot.jpg);
 	background-position:center;
 	background-repeat: no-repeat;
@@ -58,28 +58,24 @@ a {
 	font-weight: 550;
 	text-decoration: none;
 	font-size: 16px;
-	padding: 14px 20px 0 20px;
+	padding: 10px 20px 0 20px;
 }
 
-.nav-links a::after {
+/*.nav-links a::after {
 	content: '';
-	/*replaces an element with a generated value*/
+	replaces an element with a generated value
 	width: 0;
 	height: 2.5px;
 	background: red;
 	display: block;
 	margin: auto;
-	/*make the line from the center*/
+	make the line from the center
 	transition: 0.5s;
 }
 
 .nav-links a:hover::after {
 	width: 100%;
-}
-
-.nav-links a:active {
-	opacity: 0.5;
-}
+}*/
 
 .language {
   color: #fff;
@@ -114,17 +110,55 @@ nav .fa {
 footer{
   text-align: center;
   font-size: small;
+  background-color: #2a65beda;
 }
 
+.about_us{
+	text-align: center;
+	margin-top: 20px;
+	color: white;
+	background-color: #2a65beda;
+	padding: 20px;
+}
 footer p{
-	background-color: rgba(255, 203, 140, 0.74);
+	color: white;
 }
-
 .icons .fa{
-  color: #f44336;
+  color:white;
   margin: 0 13px;
   cursor : pointer;
   padding: 18px 0;
+}
+
+.button_about_recipe{
+	font-size: 20px;
+	padding: 7px 15px;
+	border-radius: 30px;
+	background-color: transparent;
+	border-color:white;
+	
+
+}
+.navbar_btn{
+	margin-top: 5px;
+	padding-bottom: 5px;
+	background-color: transparent;
+	border-color: rgb(20, 11, 79);
+	border-radius: 19px;
+	margin-right: 7px;
+	transition: 0.5s;
+}
+.navbar_btn:hover{
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+}
+.navbar_btn:active{
+opacity: 0.5;
+
+}
+
+.link_color{
+	color:whitesmoke;
+	text-transform: capitalize;
 }
 
 /* MEDIA */

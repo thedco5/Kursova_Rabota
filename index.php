@@ -23,20 +23,20 @@
 							<option value="index.php" selected>БГ</option>
 							<option value="other_languages/en/index.php">EN</option>
 						</select> 
-						<a href="">НАЧАЛО</a> 
-						<a href="">ЗА НАС</a> 
-					  <a href= <?php
+				<button class ="navbar_btn">		<a href="">НАЧАЛО</a>  </button>
+				<button class ="navbar_btn">	<a href="">ЗА НАС</a> </button>
+				<button class ="navbar_btn">		  <a href= <?php
 							if(Utils::current_user())
 								echo "'profile.php'>" . Utils::current_user();
 							else
 								echo "'forms/login.php'>ВХОД";
-						?> </a>
-						<a href= <?php
+						?> </a></button>
+						<button class ="navbar_btn"><a href= <?php
 							if(isset($_SESSION["usr"]))
 								echo "'forms/signout.php'>ИЗХОД";
 							else
 								echo "'forms/register.php'>РЕГИСТРАЦИЯ";
-						?> </a>
+						?> </a></button>
 					</div>
 					<i class="fa fa-bars" onclick="showMenu()"></i>
 				</nav>
@@ -45,11 +45,12 @@
 			<div class="text-box">
               <h3>Worl\rsity</h>
               <p>st thing in the world.</p>
-              <a href="" class="hero-btn">Visit Us To Know More</a>
+            <button class= "button_about_recipe">  <a href="" class = "link_color">Visit us to see more</a> </button>
             </div>
 		</header>
 
 		<main>
+			<h3 class = "about_us">ABOUT US</h3>
 		</main>
 
 		<footer>
