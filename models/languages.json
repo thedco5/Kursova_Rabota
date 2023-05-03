@@ -1,0 +1,22 @@
+{
+    "bg" : [{
+        "lang_code": "bg",
+        "lang_abbr": "БГ",
+        "start": "НАЧАЛО",
+        "about us": "ЗА НАС",
+        "log in": "ВХОД",
+        "log out": "ИЗХОД",
+        "sign up": "РЕГИСТРАЦИЯ",
+        "all rights reserved": "Всички права запазени"
+    }],
+    "en" : [{
+        "lang_code": "en",
+        "lang_abbr": "EN",
+        "start": "HOME",
+        "about us": "ABOUT US",
+        "log in": "LOG IN",
+        "log out": "LOG OUT",
+        "sign up": "SIGN UP",
+        "all rights reserved": "All rights reserved"
+    }]
+}
