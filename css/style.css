@@ -1,199 +1,102 @@
-
 * {
 	margin: 0;
 	padding: 0;
-	font-family: 'Poppins', sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
-.content{ position: relative; }
-
-html { scroll-behavior: smooth; }
 
 /* NAVIGATION BAR */
 
-header {
-	height: 100vh;
-	background-image: linear-gradient(rgba(1, 2, 6, 0.3), rgba(0, 1, 2, 0.4)), url(../img/kitchen_plot.jpg);
-	background-position:center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size:cover;
-	box-sizing: border-box;
+.navbar{
+	background-color: rgba(0, 0, 0, 0.326);
 }
 
-nav {
-	/*display: flex;*/
-	background-color: #00000026;
+main{
+	background-color:rgba(0, 0, 0, 0.128);
 }
 
-img {
-	margin-top: 4px;
-	width: 150px;
+select{
+	background: transparent;
+} 
+
+.logo-img {
+	width: 140px;
 	height: 40px;
 }
 
-a { text-decoration: none; }
-			
-.nav-links {
-	float: right;
-	/*flex:1; text-align: right;*/
-  /*flex: 1 means the following:
-  flex-grow : 1;    ➜ The div will grow in same proportion as the window-size       
-  flex-shrink : 1;  ➜ The div will shrink in same proportion as the window-size 
-  flex-basis : 0;   ➜ The div does not have a starting value as such and will 
-					   take up screen as per the screen size available for
-					   e.g:- if 3 divs are in the wrapper then each div will take 33%.*/
-					
-	color: white;
-}
-
-.nav-links a {
-	font-family:Arial, Helvetica, sans-serif;
-	display: inline-block;
-	color: #ffffff;
-	font-weight: 550;
-	text-decoration: none;
-	font-size: 16px;
-	padding: 10px 20px 0 20px;
-}
-
-/*.nav-links a::after {
-	content: '';
-	replaces an element with a generated value
-	width: 0;
-	height: 2.5px;
-	background: red;
-	display: block;
-	margin: auto;
-	make the line from the center
+.btn.btn-outline{
+	border:transparent;
+	border-radius: 8px;
 	transition: 0.5s;
 }
 
-.nav-links a:hover::after {
-	width: 100%;
-}*/
-
-.language {
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0);
-  border: none;
+.btn.btn-outline:hover{
+	border:1.5px solid rgb(20, 11, 79);
+	background-color: transparent;
+	box-shadow: 1px 1px 7px rgba(0, 0, 0, 2);
+}
+.btn.btn-outline:active{
+	border:none;
+	color: white;
+	background-color:rgb(20, 11, 79); 
+    opacity: 0.7;
 }
 
-.language option{ color: #000; }
-
-nav .fa { display: none; }
-
-.text-box { box-sizing: border-box; }
-.text-box {
-	position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 30%;
-    padding:20px;
-    background-color: rgba(0, 0, 0, 0.249);
-    color: white;
-    text-align: center;
+.carousel-img{
+	margin:-110px 0 -40px 0;
+	width: 90%;
+	height: 660px;
 }
 
 /* FOOTER */
 
-footer {
-	text-align: center;
-  	font-size: small;
-  	background-color: #2a65beda;
+footer{
+  text-align: center;
+  font-size: small;
+  background-color: #2a65beda;
 }
 
-.about_us {
+.about_us{
 	text-align: center;
 	margin-top: 20px;
 	color: white;
 	background-color: #2a65beda;
 	padding: 20px;
 }
-footer p { color: white;
+footer p{
+	color: white;
 }
-.icons .fa {
+.icons .fa{
   color:white;
   margin: 0 13px;
   cursor : pointer;
   padding: 18px 0;
 }
 
-.button_about_recipe {
-	font-size: 20px;
-	padding: 7px 15px;
-	border-radius: 30px;
-	background-color: transparent;
-	border-color:white;
-}
-.navbar_btn {
-	margin-top: 5px;
-	padding-bottom: 5px;
-	background-color: transparent;
-	border-color: rgb(20, 11, 79);
-	border-radius: 19px;
-	margin-right: 7px;
-	transition: 0.5s;
-}
-.navbar_btn:hover {
-	box-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
-}
-.navbar_btn:active {
-	opacity: 0.5;
-}
-
-.link_color {
+.link_color{
 	color:whitesmoke;
 	text-transform: capitalize;
 }
 
+ 
+  
+  
 /* MEDIA */
 
-@media (max-width: 700px) {
-	nav {
-		display: flex;
-		padding: 5px 10px;
-		align-items: center;
-	}
-
-	 nav img {
-		width: 150px;
-		margin-top: -21px;
-	}
-
-	.nav-links {
-		position: absolute;
-		background-color: rgb(201, 174, 0);
-		height: 100vh;  /* view hight */
-		width: 200px;
-		top: 0;
-		right: -200px;
-		text-align: left;
-		z-index: 2;
-		transition: 1s;
-	}
-
-	.nav-links a {	
-		display: block;
-		font-size: 14px;
-		padding: 10px 10px;
+@media (max-width:700px) {
+	.logo-img{
+		margin-top: 1.8px;
 	}
 	
-	nav .fa {
-		display: block;
-		color: #fff;
-		margin-left: 250px;
-		margin-top: -50px;
-		font-size: 22px;
-		cursor: pointer;
+	.btn.btn-outline{
+		width: 100%;
+		line-height: 20px;
 	}
 
-	nav .nav-links .fa {
-		display: block;
-		color: #fff;
-		margin: 10px;
-		font-size: 22px;
-		cursor: pointer;
+	.carousel-img{
+		margin: 0;
+		width: 100%;
+		height: 300px;
 	}
+
 }
