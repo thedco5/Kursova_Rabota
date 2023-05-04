@@ -1,6 +1,6 @@
 <?php
-include "models/utils.php";
-include "models/lang.php";
+	include "models/utils.php";
+	include "models/lang.php";
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo $dict["lang_code"]; ?>">
