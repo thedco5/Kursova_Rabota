@@ -42,7 +42,9 @@ include "models/lang.php";
 							</select>
 
 						</div>
-						<button class="btn btn-outline mr-2"> <a class=" text-dark text-decoration-none" href=""> <?php echo $dict["start"]; ?> </a> </button>
+						<button class="btn btn-outline mr-2"> <a class=" text-dark text-decoration-none" href="index.php"> <?php echo $dict["start"]; ?> </a> </button>
+						<button class="btn btn-outline mr-2"> <a class=" text-dark text-decoration-none" href="#categories_id"> <?php echo $dict["categories"]; ?> </a> </button>
+						<button class="btn btn-outline mr-2"> <a class=" text-dark text-decoration-none" href=""> <?php echo $dict["recepies"]; ?> </a> </button>
 						<button class="btn btn-outline mr-2"> <a class="text-dark text-decoration-none" href=""> <?php echo $dict["about us"]; ?> </a> </button>
 						<button class="btn btn-outline mr-2"> <a class="text-dark text-decoration-none" href=<?php
 																												echo "'view/";
@@ -67,14 +69,14 @@ include "models/lang.php";
 				<div class="card-img-overlay card-inverse text-center" style="margin-top: 20%;">
 					<h1 class="text-stroke text-white  text-capitalize">healthy food recipe</h1>
 					<p class="text-stroke text-white  font-italic">With supporting text below as a natural lead-in to additional content.</p>
-					<button class="btn btn-success"><a class="text-dark text-decoration-none" href="#">View more</a></button>
+					<button class="btn btn-success"><a class="text-dark text-decoration-none" href="#recepies_id">View more</a></button>
 				</div>
 			</div>
 
 			<!-- CATEGORIES -->
 			<main>
 				<section class="categories">
-					<p>Категории</p>
+					<p id="categories_id">Категории</p>
 
 					<a href="" class="meals text-reset">
 						<img src="img/osnovni.png" alt="Основни ястия">
@@ -134,10 +136,10 @@ include "models/lang.php";
 								<strong>GUIDE</strong>
 							</h6>
 							<p>
-								<a href="#!" class="text-reset">Home</a>
+								<a href="index.php" class="text-reset">Home</a>
 							</p>
 							<p>
-								<a href="#!" class="text-reset">Categories</a>
+								<a href="#categories_id" class="text-reset">Categories</a>
 							</p>
 							<p>
 								<a href="#!" class="text-reset">Recipe</a>
@@ -155,10 +157,10 @@ include "models/lang.php";
 								<strong>Account</strong>
 							</h6>
 							<p>
-								<a href="#!" class="text-reset">Log in</a>
+								<a href="login.php" class="text-reset">Log in</a>
 							</p>
 							<p>
-								<a href="#!" class="text-reset">Sign up</a>
+								<a href="register.php" class="text-reset">Sign up</a>
 							</p>
 						</div>
 						<!-- Grid column -->
@@ -180,8 +182,8 @@ include "models/lang.php";
 				<!-- Section: Links  -->
 
 				<!-- Copyright -->
-				<div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-					<p>&copy;2023 Food4Foodies.com. <?php echo $dict["all rights reserved"]; ?>. </p>
+				<div class="text-center p-1	" style="background-color: rgba(0, 0, 0, 0.05);">
+					<p class="pt-2">&copy;2023 Food4Foodies.com. <?php echo $dict["all rights reserved"]; ?>. </p>
 				</div>
 				<!-- Copyright -->
 			</footer>
