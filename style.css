@@ -1,0 +1,162 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* NAVIGATION BAR */
+nav {
+	background-color: rgb(255, 255, 255);
+}
+
+select {
+	background: transparent;
+}
+
+.logo-img {
+	width: 140px;
+	height: 40px;
+}
+
+.btn.btn-outline {
+	border: transparent;
+	border-radius: 8px;
+	transition: 0.5s;
+}
+
+.btn.btn-outline:hover {
+	border: 1.5px solid #FF6000;
+	background-color: #FF6000;
+	box-shadow: 1px 1px 7px rgba(0, 0, 0, 2);
+}
+
+.btn.btn-outline:active {
+	opacity: 0.7;
+}
+
+.card h1 {
+	font-size: 45px;
+}
+
+.btn.btn-success {
+	background-color: #FF6000;
+	border: 1.5px solid #FF6000;
+	box-shadow: 1px 1px 7px rgba(0, 0, 0, 2);
+	border-radius: 50px;
+	padding: 10px 30px;
+	margin-top: 10px;
+	height: 45px;
+	transition: 0.5s;
+}
+
+.btn.btn-success:hover {
+	background-color: #FF6000;
+	border: 1.5px solid #FF6000;
+	box-shadow: 4px 4px 15px rgba(0, 0, 0, 2);
+}
+
+.btn.btn-success:active {
+	background-color: #FF6000 !important;
+	border: 1.5px solid #FF6000 !important;
+	opacity: 0.7;
+}
+
+.img {
+	height: 100vh;
+}
+
+/* CATEGORIES */
+.categories {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.categories p {
+	border-bottom: 1px solid #999;
+	font-size: 25px;
+	margin-bottom: 15px;
+	padding-top: 20px;
+	padding-bottom: 7px;
+}
+
+.meals {
+	margin-bottom: 50px;
+	display: inline-block;
+	position: relative;
+	/*changes the position of the element relative to the parent element and relative 
+	to itself and where it would usually be in the regular document flow of the page*/
+}
+
+.meals .iconHold {
+	display: block;
+	position: absolute;
+	width: 100%;
+	bottom: -40px;
+}
+
+.iconHold img {
+	display: block;
+	width: 110px;
+	margin: 0 auto;
+}
+
+/* FOOTER */
+
+footer {
+	background-color: #FF6000;
+}
+
+
+
+/* MEDIA */
+
+@media(max-width:700px) {
+	.logo-img {
+		margin-top: 1.8px;
+	}
+
+	.btn.btn-outline {
+		width: 100%;
+		line-height: 20px;
+	}
+
+	.dropdown {
+		text-align: center;
+		margin-top: 10px;
+	}
+
+	.card-img-top {
+		height: 200px;
+	}
+
+	.card p {
+		font-size: 10px;
+	}
+
+	.card h1 {
+		font-size: 20px;
+	}
+
+	.btn.btn-success {
+		border-radius: 50px;
+		padding: 4px;
+		margin-top: 0;
+		font-size: 13px;
+		height: 27px;
+	}
+
+	.about_us {
+		font-size: 20px;
+	}
+
+	.text-uppercase {
+		font-size: 14px;
+	}
+
+	.col-4 p {
+		font-size: 13px;
+	}
+
+}
