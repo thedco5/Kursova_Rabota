@@ -1,6 +1,7 @@
 <?php
 include "models/utils.php";
 include "models/lang.php";
+include "header.php";
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo $dict["lang_code"]; ?>">
@@ -22,47 +23,6 @@ include "models/lang.php";
 <body>
 	<!-- NAVIGATION BAR -->
 	<div class="content">
-		<header>
-			<nav class="navbar navbar-expand-sm navbar-light">
-				<div class="container-fluid ">
-					<a href="index.php"> <img class="logo-img" src="img/logo.png" alt="logo"> </a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-
-					<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-						<div class="dropdown">
-							<select class="language mr-2" onchange="location=this.value;">
-								<option> <?php echo $dict["lang_abbr"]; ?> </option>
-								<option value="index.php?lang=<?php
-																echo $dict["lang_abbr"] == "БГ" ? "en" : "bg";
-																?>">
-									<?php echo $dict["lang_abbr"] == "БГ" ? "EN" : "БГ"; ?>
-								</option>
-							</select>
-
-						</div>
-						<button class="btn btn-outline mr-2"> <a class=" text-dark text-decoration-none" href="index.php"> <?php echo $dict["start"]; ?> </a> </button>
-						<button class="btn btn-outline mr-2"> <a class=" text-dark text-decoration-none" href="#categories_id"> <?php echo $dict["categories"]; ?> </a> </button>
-						<button class="btn btn-outline mr-2"> <a class=" text-dark text-decoration-none" href=""> <?php echo $dict["recepies"]; ?> </a> </button>
-						<button class="btn btn-outline mr-2"> <a class="text-dark text-decoration-none" href=""> <?php echo $dict["about us"]; ?> </a> </button>
-						<button class="btn btn-outline mr-2"> <a class="text-dark text-decoration-none" href=<?php
-																												echo "'view/";
-																												if (Utils::current_user())
-																													echo "profile.php'>" . Utils::current_user();
-																												else echo "forms/login.php'>" . $dict["log in"];
-																												?> </a> </button>
-						<button class="btn btn-outline mr-2"> <a class="text-dark text-decoration-none" href=<?php
-																												echo "'view/";
-																												if (isset($_SESSION["usr"]))
-																													echo "forms/signout.php'>" . $dict["log out"];
-																												else echo "forms/register.php'>" . $dict["sign up"];
-																												?> </a> </button>
-					</div>
-				</div>
-			</nav>
-		</header>
-
 		<main>
 			<div class="card">
 				<img class="img card-img-top" src="img/home_page.jpg" width="100%" alt="Responsive image">
@@ -74,7 +34,7 @@ include "models/lang.php";
 			</div>
 
 			<!-- CATEGORIES -->
-			<main>
+			
 				<section class="categories">
 					<p id="categories_id">Категории</p>
 
@@ -121,73 +81,9 @@ include "models/lang.php";
 			</main>
 
 			<!-- Footer -->
-			<footer>
-				<h4 class="about_us text-center pt-4 pb-4"> <?php echo $dict["about us"]; ?> </h4>
-				<div class="container text-center">
-					<!-- Grid row -->
-					<div class="row">
-
-						<!-- Grid column -->
-
-						<!-- Grid column -->
-						<div class="col-4">
-							<!-- Links -->
-							<h6 class="text-uppercase">
-								<strong>GUIDE</strong>
-							</h6>
-							<p>
-								<a href="index.php" class="text-reset">Home</a>
-							</p>
-							<p>
-								<a href="#categories_id" class="text-reset">Categories</a>
-							</p>
-							<p>
-								<a href="#!" class="text-reset">Recipe</a>
-							</p>
-							<p>
-								<a href="#!" class="text-reset">About us</a>
-							</p>
-						</div>
-						<!-- Grid column -->
-
-						<!-- Grid column -->
-						<div class="col-4">
-							<!-- Links -->
-							<h6 class="text-uppercase">
-								<strong>Account</strong>
-							</h6>
-							<p>
-								<a href="login.php" class="text-reset">Log in</a>
-							</p>
-							<p>
-								<a href="register.php" class="text-reset">Sign up</a>
-							</p>
-						</div>
-						<!-- Grid column -->
-
-						<!-- Grid column -->
-						<div class="col-4">
-							<!-- Links -->
-							<h6 class="text-uppercase"><strong>Contact</strong></h6>
-							<p>
-								<i class="fa fa-envelope"></i>
-								info@example.com
-							</p>
-						</div>
-						<!-- Grid column -->
-					</div>
-					<!-- Grid row -->
-				</div>
-				</section>
-				<!-- Section: Links  -->
-
-				<!-- Copyright -->
-				<div class="text-center p-1	" style="background-color: rgba(0, 0, 0, 0.05);">
-					<p class="pt-2">&copy;2023 Food4Foodies.com. <?php echo $dict["all rights reserved"]; ?>. </p>
-				</div>
-				<!-- Copyright -->
-			</footer>
-			<!-- Footer -->
+			<?php
+include "footer.php";
+?>
 	</div>
 </body>
 
