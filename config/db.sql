@@ -26,10 +26,13 @@ DROP TABLE IF EXISTS `profiles`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `profiles` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `username` varchar(15) NOT NULL,
-  `password` varchar(60) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `username` varchar(16) NOT NULL,
+  `email` varchar(32) DEFAULT NULL,
+  `password` varchar(64) NOT NULL,
+  `role` enum('admin','user') NOT NULL DEFAULT 'user',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username_UNIQUE` (`username`)
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38,7 +41,6 @@ CREATE TABLE `profiles` (
 
 LOCK TABLES `profiles` WRITE;
 /*!40000 ALTER TABLE `profiles` DISABLE KEYS */;
-INSERT INTO `profiles` VALUES (1,'admin','$2y$10$eX4Byfz5uKerFU49hqP7M.SZXtZHJx.0iNrsyjdLfUI/DO.ylxA4O');
 /*!40000 ALTER TABLE `profiles` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -51,12 +53,11 @@ DROP TABLE IF EXISTS `recipes`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `recipes` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) DEFAULT NULL,
-  `author` varchar(15) DEFAULT NULL,
-  `score` int DEFAULT '0',
-  `date` date DEFAULT NULL,
-  `time` time DEFAULT NULL,
-  `json_file` varchar(10) DEFAULT NULL,
+  `name` varchar(64) NOT NULL,
+  `author` varchar(16) DEFAULT '<unknown>',
+  `score` int NOT NULL DEFAULT '0',
+  `datetime` datetime DEFAULT NULL,
+  `category` enum('main_course','soup','salad','starter','dessert') DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -67,7 +68,6 @@ CREATE TABLE `recipes` (
 
 LOCK TABLES `recipes` WRITE;
 /*!40000 ALTER TABLE `recipes` DISABLE KEYS */;
-INSERT INTO `recipes` VALUES (1,'Рецепта за Торта','testuser',100,'2023-02-14','00:05:00','r1');
 /*!40000 ALTER TABLE `recipes` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -80,4 +80,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-02-15  8:39:53
+-- Dump completed on 2023-05-17 13:34:20
