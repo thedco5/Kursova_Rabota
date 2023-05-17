@@ -4,9 +4,9 @@
 			<a href="index.php"> <img class="logo-img" src="../img/logo.png" alt="logo"> </a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
-			</butto
+			</button>
 			<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-				<div class="dropdown
+				<div class="dropdown">
 					<select class="language mr-2" onchange="location=this.value;">
 						<option> <?php echo $dict["lang_abbr"]; ?> </option>
 						<option value="?lang=<?php
