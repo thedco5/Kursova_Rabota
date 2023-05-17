@@ -16,7 +16,19 @@
         "Not a member yet?" : "Все още не сте член?",
         "Register" : "Регистрация",
         "recepies" : "РЕЦЕПТИ",
-        "categories" : "КАТЕГОРИИ"
+        "categories" : "КАТЕГОРИИ",
+        "Email" : "Имейл (незадължително)",
+        "Confirm Password" : "Потвърдете парола",
+        "Sign up" : "Впиши",
+        "already member" : "Вече сте член?",
+        "Back to Start" : "Назад към Начало",
+        "fill all fields" : "Моля попълнете всички задължителни полета.",
+        "already exists" : "Такова потребителско име или имейл вече съществува(т)!",
+        "invalid username" : "Невалидно потребителско име, може само латински букви, цифри и _!",
+        "invalid email" : "Невалиден имейл",
+        "invalid password" : "Паролата трябва да е поне 8 символа!",
+        "invalid confirmation" : "Паролите не си съвпадат.",
+        "" : ""
     }],
     "en" : [{
         "lang_code": "en",
@@ -35,6 +47,17 @@
         "Not a member yet?" : "Not a member yet?",
         "Register" : "Register",
         "recepies" : "RECIPES",
-        "categories" : "CATEGORIES"
+        "categories" : "CATEGORIES",
+        "Email" : "Email (optional)",
+        "Confirm Password" : "Confirm password",
+        "Sign up" : "Sign up",
+        "already member" : "You already a member?",
+        "Back to Start" : "Back to Start",
+        "fill all fields" : "Please fill out all required fields.",
+        "already exists" : "Such username or email already exists!",
+        "invalid username" : "Invalid username, only letters, numbers and _ allowed!",
+        "invalid email" : "Invalid e-mail!",
+        "invalid password" : "Password has to be at least 8 characters long!",
+        "invalid confirmation" : "Mismatch between password and confirmation!"
     }]
 }
