@@ -16,21 +16,21 @@
 						</option>
 					</select>
 				</div>
-				<button class="btn btn-outline mr-2"> <a class=" text-dark text-decoration-none" href="index.php"> <?php echo $dict["start"]; ?> </a> </button>
+				<button class="btn btn-outline mr-2"> <a class=" text-dark text-decoration-none" href="."> <?php echo $dict["start"]; ?> </a> </button>
 				<button class="btn btn-outline mr-2"> <a class=" text-dark text-decoration-none" href="#categories_id"> <?php echo $dict["categories"]; ?> </a> </button>
 				<button class="btn btn-outline mr-2"> <a class=" text-dark text-decoration-none" href="recipes.php"> <?php echo $dict["recepies"]; ?> </a> </button>
 				<button class="btn btn-outline mr-2"> <a class="text-dark text-decoration-none" href="#about_us"> <?php echo $dict["about us"]; ?> </a> </button>
 				<button class="btn btn-outline mr-2"> <a class="text-dark text-decoration-none" href=
 					<?php
-						if (Utils::current_user())
-							echo "'profile.php" . $lang_code . "'>" . Utils::current_user();
-						else echo "'login.php" . $lang_code . "'>" . $dict["log in"];
+						if (Utils::current_user() != null)
+							 echo "'../controllers/signout.php" . $lang_code . "'>" . $dict["log out"];
+						else echo "'register.php" . $lang_code . "'>" . $dict["sign up"];
 					?> </a> </button>
 				<button class="btn btn-outline mr-2"> <a class="text-dark text-decoration-none" href=
 					<?php
-						if (Utils::current_user() != null)
-							 echo "'forms/signout.php" . $lang_code . "'>" . $dict["log out"];
-						else echo "'register.php" . $lang_code . "'>" . $dict["sign up"];
+						if (Utils::current_user())
+							echo "'profile.php" . $lang_code . "'>" . Utils::current_user();
+						else echo "'login.php" . $lang_code . "'>" . $dict["log in"];
 					?> </a> </button>
 			</div>
 		</div>
