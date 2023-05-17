@@ -14,6 +14,7 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	</head>
 	<body>
+		<!-- LANGUAGE CHOICE -->
 		<select class="language mr-2"style="background: none; border: none;" onchange="location=this.value;">
 			<option> <?php echo $dict["lang_abbr"]; ?> </option>
 			<option value="?lang=<?php
@@ -22,9 +23,13 @@
 				<?php echo $dict["lang_abbr"] == "БГ" ? "EN" : "БГ"; ?>
 			</option>
 		</select>
+		<!-- MAIN FORM -->
 		<div class="center">
 			<h2> <?php echo $dict["Login"]; ?> </h2>
-			<form method="post">
+			<form action="#" method="post">
+				<!-- PHP CONTROLLER -->
+                <?php include_once "../controllers/login_controller.php"; ?>
+                <!-- PHP CONTROLLER -->
 				<div class="txt_field">
 					<input type="text" class="form-control" name="username" placeholder="<?php echo $dict["Username"]; ?>" required>
 					<span></span>
@@ -36,7 +41,9 @@
 				<a href="newPassword.php"> <?php echo $dict["Forgot password?"]; ?> </a><br><br>
 				<input type="submit" name="submit" value="<?php echo $dict["Log in"]; ?>">
 				<div class="signup_link">
-					<?php echo $dict["Not a member yet?"]; ?> <a href="register.php"> <?php echo $dict["Register"] . "?"; ?> </a>
+					<?php echo $dict["Not a member yet?"]; ?> 
+					<a href="register.php"> <?php echo $dict["Register"] . "?"; ?> </a> <br>
+                    <a href="home.php"><?php echo $dict["Back to Start"]; ?></a>
 				</div>
 			</form>
 		</div>
