@@ -1,3 +1,4 @@
+<!-- TRANSLATE -->
 <?php
 	include_once "../models/utils.php";
 	include_once "../models/lang.php";
@@ -24,9 +25,10 @@
 		<!-- NAVIGATION BAR -->
 		<div class="content">
 			<!-- HEADER -->
-			<?php include "header.php"; ?>
+			<?php include_once "header.php"; ?>
 			<!-- HEADER -->
 			<main>
+				
 			</main>
 			<div class="card">
 				<img class="img card-img-top" src="../img/home_page.jpg" width="100%" alt="Responsive image">
