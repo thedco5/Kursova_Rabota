@@ -7,7 +7,16 @@
         "log in": "ВХОД",
         "log out": "ИЗХОД",
         "sign up": "РЕГИСТРАЦИЯ",
-        "all rights reserved": "Всички права запазени"
+        "all rights reserved": "Всички права запазени",
+        "Login" : "Вход",
+        "Log in" : "Вход",
+        "Username" : "Потребителско име",
+        "Password" : "Парола",
+        "Forgot password?" : "Забравена парола?",
+        "Not a member yet?" : "Все още не сте член?",
+        "Register" : "Регистрация",
+        "recepies" : "РЕЦЕПТИ",
+        "categories" : "КАТЕГОРИИ"
     }],
     "en" : [{
         "lang_code": "en",
@@ -17,6 +26,15 @@
         "log in": "LOG IN",
         "log out": "LOG OUT",
         "sign up": "SIGN UP",
-        "all rights reserved": "All rights reserved"
+        "all rights reserved": "All rights reserved",
+        "Login" : "Login",
+        "Log in" : "Log in",
+        "Username" : "Username",
+        "Password" : "Password",
+        "Forgot password?" : "Forgot password?",
+        "Not a member yet?" : "Not a member yet?",
+        "Register" : "Register",
+        "recepies" : "RECIPES",
+        "categories" : "CATEGORIES"
     }]
 }

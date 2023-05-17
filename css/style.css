@@ -15,6 +15,7 @@ nav {
 
 select {
 	background: transparent;
+	border: none;
 }
 
 .logo-img {
