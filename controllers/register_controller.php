@@ -1,42 +1,29 @@
-<!-- TRANSLATE -->
 <?php
     include_once "../models/dbconn.php";
     include_once "../models/utils.php";
-    if (isset($_POST["password"])) {
-        if (isset($_POST["username"])) {
-            $stmt = $pdo->prepare("SELECT id, password, role, email FROM profiles WHERE username LIKE ?;");
-            $stmt->execute([$_POST["username"]]);
-            $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    if (isset($_POST["username"]) && isset($_POST["email"]) && isset($_POST["password"]) && isset($_POST["confirm"])) {
+
+        $stmt = $pdo->prepare("SELECT id, username, role FROM profiles WHERE username LIKE ? OR email LIKE ?;");
+        $stmt->execute([$_POST["username"], $_POST["email"]]);
+        $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
         
-            if (count($res) != 1)
-                echo "<div class='text-danger centered'> Such account does not exist! </div>";
-            else {
-                if (password_verify($_POST["password"], $res[0]["password"])) { // hash it!
-                    Utils::session();
-                    $_SESSION["id"] = $res[0]["id"];
-                    $_SESSION["username"] = $_POST["username"];
-                    $_SESSION["role"] = $res[0]["role"];
-                    $_SESSION["email"] = $res[0]["email"];
-                    header("Location: home.php");
-                } else echo "<div class='text-danger centered'> Wrong password! </div>";
-            }
-        } else if (isset($_POST["email"])) {
-            $stmt = $pdo->prepare("SELECT id, username, password, role FROM profiles WHERE email LIKE ?;");
-            $stmt->execute([$_POST["email"]]);
-            $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        
-            if (count($res) != 1)
-                echo "<div class='text-danger centered'> Such email does not exist! </div>";
-            else {
-                if (password_verify($_POST["password"], $res[0]["password"])) { // hash it!
-                    Utils::session();
-                    $_SESSION["id"] = $res[0]["id"];
-                    $_SESSION["username"] = $res[0]["username"];
-                    $_SESSION["role"] = $res[0]["role"];
-                    $_SESSION["email"] = $_POST["email"];
-                    header("Location: home.php");
-                } else echo "<div class='text-danger centered'> Wrong password! </div>";
-            }
+        if (!(strlen($_POST["username"]) > 0 && strlen($_POST["password"]) > 0 && strlen($_POST["confirm"]) > 0))
+            echo "<div class='text-danger'> " . $dict["fill all fields"] . " </div>";
+        else if (count($res) != 0)
+            echo "<div class='text-danger'> " . $dict["already exists"] . " </div>";
+        else if(!(preg_match("/[a-zA-Z0-9_]+/", $_POST["username"])))
+            echo "<div class='text-danger'> " . $dict["invalid username"] . " </div>";
+        else if (!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL))
+            echo "<div class='text-danger'> " . $dict["invalid email"] . " </div>";
+        else if(!(preg_match("/.{8,}/", $_POST["password"])))
+            echo "<div class='text-danger'> " . $dict["invalid password"] . " </div>";
+        else if ($_POST["password"] != $_POST["confirm"])
+            echo "<div class='text-danger'> " . $dict["invalid confirmation"] . " </div>";
+        else {
+            $stmt = $pdo->prepare("INSERT INTO profiles (username, email, password) VALUES (?,?,?);");
+            $stmt->execute([$_POST["username"], $_POST["email"], password_hash($_POST["password"], PASSWORD_DEFAULT)]);
+            Utils::session();
+            header("Location: login.php");
         }
-    }
+    } 
 ?>
