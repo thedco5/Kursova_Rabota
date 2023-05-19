@@ -1,12 +1,12 @@
+<!-- TRANSLATE -->
 <?php
-    include_once "../models/dbconn.php";
+    include_once "../dbconn.php";
     include_once "../models/utils.php";
     if (isset($_POST["username"]) && isset($_POST["email"]) && isset($_POST["password"]) && isset($_POST["confirm"])) {
-
         $stmt = $pdo->prepare("SELECT id, username, role FROM profiles WHERE username LIKE ? OR email LIKE ?;");
         $stmt->execute([$_POST["username"], $_POST["email"]]);
         $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        
+
         if (!(strlen($_POST["username"]) > 0 && strlen($_POST["password"]) > 0 && strlen($_POST["confirm"]) > 0))
             echo "<div class='text-danger'> " . $dict["fill all fields"] . " </div>";
         else if (count($res) != 0)

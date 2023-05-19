@@ -1,13 +1,13 @@
 <!-- TRANSLATE -->
 <?php
-    include_once "../models/dbconn.php";
+    include_once "../dbconn.php";
     include_once "../models/utils.php";
     if (isset($_POST["password"])) {
         if (isset($_POST["username"])) {
             $stmt = $pdo->prepare("SELECT id, password, role, email FROM profiles WHERE username LIKE ?;");
             $stmt->execute([$_POST["username"]]);
             $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        
+
             if (count($res) != 1)
                 echo "<div class='text-danger centered'> Such account does not exist! </div>";
             else {
@@ -24,7 +24,7 @@
             $stmt = $pdo->prepare("SELECT id, username, password, role FROM profiles WHERE email LIKE ?;");
             $stmt->execute([$_POST["email"]]);
             $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        
+
             if (count($res) != 1)
                 echo "<div class='text-danger centered'> Such email does not exist! </div>";
             else {
