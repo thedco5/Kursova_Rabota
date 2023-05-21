@@ -1,10 +1,12 @@
 <?php 
-    include_once "../models/lang.php";
-
+include_once "../models/lang.php";
+	$lang_code = "";
+	if (isset($_GET["lang"]))
+		$lang_code = "?lang=" . $_GET["lang"];
 ?>
 <!DOCTYPE html>
-<html lang="en">
-    <head>
+<html lang="<?php echo $dict["lang_code"]; ?>">
+	<head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
