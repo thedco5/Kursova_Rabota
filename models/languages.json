@@ -16,6 +16,7 @@
         "Not a member yet?" : "Все още не сте член?",
         "Register" : "Регистрация",
         "recepies" : "РЕЦЕПТИ",
+        "categories" : "КАТЕГОРИИ",
         "Email" : "Имейл (незадължително)",
         "Confirm Password" : "Потвърдете парола",
         "Sign up" : "Впиши",
@@ -31,7 +32,18 @@
         "teodor" :"Теодор Пацов",
         "tsvetina" :"Цветина Томова",
         "petur" :"Петър Николаев",
-        "teodora" :"Теодора Николаева"
+        "teodora" :"Теодора Николаева",
+        "account" : "Акаунт",
+        "contact" : "Контакти",
+        "menu" : "Меню",
+        "healthy food recipe" : "Здравословни рецепти",
+        "What should I cook today?" : "Kакво да сготвя днес?",
+        "View more" :"Вижте повече",
+        "main dishes" : "Основни ястия",
+        "soups" : "Супи",
+        "salads" : "Салати",
+        "starters" : "Предястия",
+        "desserts" : "Десерти"
     }],
     
     "en" : [{
@@ -51,6 +63,7 @@
         "Not a member yet?" : "Not a member yet?",
         "Register" : "Register",
         "recepies" : "RECIPES",
+        "categories" : "CATEGORIES",
         "Email" : "Email (optional)",
         "Confirm Password" : "Confirm password",
         "Sign up" : "Sign up",
@@ -66,6 +79,17 @@
         "teodor" : "Teodor Patsov",
         "tsvetina" : "Tsvetina Tomova",
         "petur" : "Petur Nikolaev",
-        "teodora" : "Teodora Nikolaeva"
+        "teodora" : "Teodora Nikolaeva",
+        "account" : "Account",
+        "contact" : "Contact",
+        "menu" : "Menu",
+        "healthy food recipe" : "Healthy Food Recipe",
+        "What should I cook today?" : "What should I cook today?",
+        "View more" : "View more",
+        "main dishes" : "Main dishes",
+        "soups" : "Soups",
+        "salads" : "Salads",
+        "starters" : "Starters",
+        "desserts" : "Desserts"
     }]
 }
