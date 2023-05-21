@@ -1,0 +1,43 @@
+.image-aboutus{
+    background-image: url("../img/about-us.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   padding: 19% 0;
+}
+
+.team-img img{
+    width: 100%;
+    padding: 4px;
+    transition: 0.5s;
+}
+
+.team-img:hover {
+    background: #f5f5f5; 
+}
+
+.team-content{
+    padding: 15px;
+}
+
+.icons i{
+    margin-right: 7px;
+    color:#232323;
+    font-size: 25px;
+}
+
+
+#social-fb:hover {
+    color: #3B5998;
+    transition:0.5s;
+}
+
+#social-gp:hover {
+    color: #d34836;
+    transition:0.5s;
+}
+
+#social-in:hover {
+    color: #C13584;
+    transition:0.5s;
+}
