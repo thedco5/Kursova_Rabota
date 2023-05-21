@@ -3,7 +3,8 @@
 
 ?>
 <footer>
-	<h4 class="about_us text-center pt-4 pb-4"> <?php echo $dict["about us"]; ?> </h4>
+	<h4 class="about_us text-center pt-4"><strong><?php echo $dict["about us"]; ?></strong></h4>
+	<div class="border border-dark mb-5"></div>
 	<div class="container text-center">
 		<!-- Grid row -->
 		<div class="row">
@@ -14,7 +15,7 @@
 			<div class="col-4">
 				<!-- Links -->
 				<h6 class="text-uppercase">
-					<strong>GUIDE</strong>
+					<strong><?php echo $dict["menu"];?></strong>
 				</h6>
 				<p>
 					<a href="home.php" class="text-reset"><?php echo $dict["start"];?></a>
@@ -32,13 +33,13 @@
 			<div class="col-4">
 				<!-- Links -->
 				<h6 class="text-uppercase">
-					<strong>Account</strong>
+					<strong><?php echo $dict["account"];?></strong>
 				</h6>
 				<p>
-					<a href="login.php" class="text-reset">Log in</a>
+					<a href="login.php" class="text-reset"><?php echo $dict["log in"];?></a>
 				</p>
 				<p>
-					<a href="register.php" class="text-reset">Sign up</a>
+					<a href="register.php" class="text-reset"><?php echo $dict["sign up"];?></a>
 				</p>
 			</div>
 			<!-- Grid column -->
@@ -46,7 +47,7 @@
 			<!-- Grid column -->
 			<div class="col-4">
 				<!-- Links -->
-				<h6 class="text-uppercase"><strong>Contact</strong></h6>
+				<h6 class="text-uppercase"><strong><?php echo $dict["contact"];?></strong></h6>
 				<p>
 					<i class="fa fa-envelope"></i>
 					info@example.com
