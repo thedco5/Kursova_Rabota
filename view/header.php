@@ -21,7 +21,6 @@
 					</select>
 				</div>
 				<button class="btn btn-outline mr-2"> <a class=" text-dark text-decoration-none" href="."> <?php echo $dict["start"]; ?> </a> </button>
-				<button class="btn btn-outline mr-2"> <a class=" text-dark text-decoration-none" href="#categories_id"> <?php echo $dict["categories"]; ?> </a> </button>
 				<button class="btn btn-outline mr-2"> <a class=" text-dark text-decoration-none" href="recipes.php"> <?php echo $dict["recepies"]; ?> </a> </button>
 				<button class="btn btn-outline mr-2"> <a class="text-dark text-decoration-none" href="about_us.php"> <?php echo $dict["about us"]; ?> </a> </button>
 				<button class="btn btn-outline mr-2"> <a class="text-dark text-decoration-none" href=
