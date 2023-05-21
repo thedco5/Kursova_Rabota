@@ -28,8 +28,13 @@
         "invalid email" : "Невалиден имейл",
         "invalid password" : "Паролата трябва да е поне 8 символа!",
         "invalid confirmation" : "Паролите не си съвпадат.",
-        "" : ""
+        "our team" : "Нашият екип",
+        "teodor" :"Теодор Пацов",
+        "tsvetina" :"Цветина Томова",
+        "petur" :"Петър Николаев",
+        "teodora" :"Теодора Николаева"
     }],
+    
     "en" : [{
         "lang_code": "en",
         "lang_abbr": "EN",
@@ -58,6 +63,11 @@
         "invalid username" : "Invalid username, only letters, numbers and _ allowed!",
         "invalid email" : "Invalid e-mail!",
         "invalid password" : "Password has to be at least 8 characters long!",
-        "invalid confirmation" : "Mismatch between password and confirmation!"
+        "invalid confirmation" : "Mismatch between password and confirmation!",
+        "our team" : "Our team",
+        "teodor" : "Teodor Patsov",
+        "tsvetina" : "Tsvetina Tomova",
+        "petur" : "Petur Nikolaev",
+        "teodora" : "Teodora Nikolaeva"
     }]
 }
