@@ -17,16 +17,13 @@
 					<strong>GUIDE</strong>
 				</h6>
 				<p>
-					<a href="home.php" class="text-reset">Home</a>
+					<a href="home.php" class="text-reset"><?php echo $dict["start"];?></a>
 				</p>
 				<p>
-					<a href="#categories_id" class="text-reset">Categories</a>
+					<a href="recipies.php" class="text-reset"><?php echo $dict["recepies"];?></a>
 				</p>
 				<p>
-					<a href="recipies.php" class="text-reset">Recipe</a>
-				</p>
-				<p>
-					<a href="#about_us" class="text-reset">About us</a>
+					<a href="#about_us" class="text-reset"><?php echo $dict["about us"];?></a>
 				</p>
 			</div>
 			<!-- Grid column -->
