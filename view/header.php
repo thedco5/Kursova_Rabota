@@ -5,7 +5,7 @@
 <header>
 	<nav class="navbar navbar-expand-sm navbar-light">
 		<div class="container-fluid ">
-			<a href="index.php"> <img class="logo-img" src="../img/logo.png" alt="logo"> </a>
+			<a href="."> <img class="logo-img" src="../img/logo.png" alt="logo"> </a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -20,9 +20,9 @@
 						</option>
 					</select>
 				</div>
-				<button class="btn btn-outline mr-2"> <a class=" text-dark text-decoration-none" href="."> <?php echo $dict["start"]; ?> </a> </button>
-				<button class="btn btn-outline mr-2"> <a class=" text-dark text-decoration-none" href="recipes.php"> <?php echo $dict["recepies"]; ?> </a> </button>
-				<button class="btn btn-outline mr-2"> <a class="text-dark text-decoration-none" href="about_us.php"> <?php echo $dict["about us"]; ?> </a> </button>
+				<button class="btn btn-outline mr-2"> <a class=" text-dark text-decoration-none" href=<?php echo "'." . $lang_code . "'>" . $dict["start"]?> </a> </button>
+				<button class="btn btn-outline mr-2"> <a class=" text-dark text-decoration-none" href=<?php echo "'recipes.php" . $lang_code . "'>" . $dict["recepies"]?> </a> </button>
+				<button class="btn btn-outline mr-2"> <a class="text-dark text-decoration-none" href=<?php echo "'about_us.php" . $lang_code . "'>" . $dict["about us"]?> </a> </button>
 				<button class="btn btn-outline mr-2"> <a class="text-dark text-decoration-none" href=
 					<?php
 						if (Utils::current_user() != null)
