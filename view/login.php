@@ -1,5 +1,4 @@
-<?php 
-include_once "../models/lang.php";
+<?php include_once "../models/lang.php";
 	$lang_code = "";
 	if (isset($_GET["lang"]))
 		$lang_code = "?lang=" . $_GET["lang"];
@@ -39,8 +38,8 @@ include_once "../models/lang.php";
 				<a href="newPassword.php"> <?php echo $dict["Forgot password?"]; ?> </a><br><br>
 				<input type="submit" name="submit" value="<?php echo $dict["Log in"]; ?>">
 				<div class="signup_link">
-					<?php echo $dict["Not a member yet?"]; ?> <a href="register.php"> <?php echo $dict["Register"] . "?"; ?> </a> <br>
-					<a href="home.php"><?php echo $dict["Back to Start"]; ?></a>
+					<?php echo $dict["Not a member yet?"]; ?> <a href=<?php echo "'register.php" . $lang_code . "'>" . $dict["Register"];?> </a> <br>
+					<a href=<?php echo "'home.php" . $lang_code . "'>" . $dict["start"];?> </a>
 				</div>
 			</form>
 		</div>

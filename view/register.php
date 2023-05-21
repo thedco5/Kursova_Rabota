@@ -1,12 +1,12 @@
 <?php 
 include_once "../models/lang.php";
-	$lang_code = "";
-	if (isset($_GET["lang"]))
-		$lang_code = "?lang=" . $_GET["lang"];
+$lang_code = "";
+if (isset($_GET["lang"]))
+    $lang_code = "?lang=" . $_GET["lang"];
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo $dict["lang_code"]; ?>">
-	<head>
+    <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,9 +45,9 @@ include_once "../models/lang.php";
                 </div>
                 <input type="submit" name="submit" value="<?php echo $dict["Sign up"]; ?>">
                 <div class="signup_link">
-                <?php echo $dict["already member"]; ?> <a href="login.php"><?php echo $dict["Login"]; ?></a>
+                <?php echo $dict["already member"]; ?> <a href=<?php echo "'login.php" . $lang_code . "'>" . $dict["Log in"];?></a>
                 <br>
-                <a href="home.php"><?php echo $dict["Back to Start"]; ?></a>
+                <a href=<?php echo "'home.php" . $lang_code . "'>" . $dict["Back to Start"];?></a>
                 </div>
             </form>
         </div>

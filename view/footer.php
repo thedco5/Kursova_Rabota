@@ -18,13 +18,13 @@
 					<strong><?php echo $dict["menu"];?></strong>
 				</h6>
 				<p>
-					<a href="home.php" class="text-reset"><?php echo $dict["start"];?></a>
+					<a class="text-body" href=<?php echo "'." . $lang_code . "'>" . $dict["start"];?></a>
 				</p>
 				<p>
-					<a href="recipies.php" class="text-reset"><?php echo $dict["recepies"];?></a>
+					<a class="text-body" href=<?php echo "'recipes.php" . $lang_code . "'>" . $dict["recepies"];?></a>
 				</p>
 				<p>
-					<a href="#about_us" class="text-reset"><?php echo $dict["about us"];?></a>
+					<a class="text-body" href=<?php echo "'about_us.php" . $lang_code . "'>" . $dict["about us"];?></a>
 				</p>
 			</div>
 			<!-- Grid column -->
@@ -36,10 +36,10 @@
 					<strong><?php echo $dict["account"];?></strong>
 				</h6>
 				<p>
-					<a href="login.php" class="text-reset"><?php echo $dict["log in"];?></a>
+					<a class="text-body" href=<?php echo "'login.php" . $lang_code . "'>" . $dict["log in"];?> </a>
 				</p>
 				<p>
-					<a href="register.php" class="text-reset"><?php echo $dict["sign up"];?></a>
+					<a class="text-body" href=<?php echo "'register.php" . $lang_code . "'>" . $dict["sign up"];?></a>
 				</p>
 			</div>
 			<!-- Grid column -->
@@ -61,8 +61,8 @@
 	<!-- Section: Links  -->
 
 	<!-- Copyright -->
-	<div class="text-center p-1	" style="background-color: rgba(0, 0, 0, 0.05);">
-		<p class="pt-2">&copy;2023 Food4Foodies.com. <?php echo $dict["all rights reserved"]; ?>. </p>
+	<div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0.05);">
+		<p class="pt-2 text-body">&copy;2023 Food4Foodies.com. <?php echo $dict["all rights reserved"]; ?>. </p>
 	</div>
 	<!-- Copyright -->
 </footer>
