@@ -33,7 +33,7 @@
 				<div class="card-img-overlay card-inverse text-center" style="margin-top: 20%;">
 					<h1 class="text-stroke text-white  text-capitalize">healthy food recipe</h1>
 					<p class="text-stroke text-white  font-italic">With supporting text below as a natural lead-in to additional content.</p>
-					<button class="btn btn-success"><a class="text-dark text-decoration-none" href="recipes.php">View more</a></button>
+					<button class="btn btn-success"><a class="text-dark text-decoration-none" href="#categories_id">View more</a></button>
 				</div>
 			</div>
 			<!-- CATEGORIES -->
