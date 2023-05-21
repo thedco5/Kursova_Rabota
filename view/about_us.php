@@ -51,7 +51,7 @@ if (isset($_GET["lang"]))
                             <div class="border mb-3"></div>
                             <div class="icons">
                                 <a href="https://www.facebook.com/tedkosp" target="_blank"><i id="social-fb" class="fa fa-facebook"></i></a>
-                                <a href="https://plus.google.com/" target="_blank"><i id="social-gp" class="fa fa-google-plus"></i></a>
+                                <a href="https://github.com/thedco5" target="_blank"><i class="fa fa-github"></i></a>
                                 <a href="https://www.instagram.com" target="_blank"><i id="social-in" class="fa fa-instagram"></i></a>
                             </div>
                         </div>
@@ -65,7 +65,7 @@ if (isset($_GET["lang"]))
                             <div class="border mb-3"></div>
                             <div class="icons">
                                 <a href="https://www.facebook.com/profile.php?id=100009300818488" target="_blank"><i id="social-fb" class="fa fa-facebook"></i></a>
-                                <a href="https://plus.google.com/" target="_blank"><i id="social-gp" class="fa fa-google-plus"></i></a>
+                                <a href="https://github.com/ttsvety" target="_blank"><i class="fa fa-github"></i></a>
                                 <a href="https://www.instagram.com/ttsvety05/" target="_blank"><i id="social-in" class="fa fa-instagram"></i></a>
                             </div>
                         </div>
@@ -79,7 +79,7 @@ if (isset($_GET["lang"]))
                             <div class="border mb-3"></div>
                             <div class="icons">
                                 <a href="https://www.facebook.com/petyo.nik" target="_blank"><i id="social-fb" class="fa fa-facebook"></i></a>
-                                <a href="https://plus.google.com/" target="_blank"><i id="social-gp" class="fa fa-google-plus"></i></a>
+                                <a href="https://github.com/PetarNikolaev22" target="_blank"><i class="fa fa-github"></i></a>
                                 <a href="https://www.instagram.com/p_nikolaev_/" target="_blank"><i id="social-in" class="fa fa-instagram"></i></a>
                             </div>
                         </div>
@@ -93,7 +93,7 @@ if (isset($_GET["lang"]))
                             <div class="border mb-3"></div>
                             <div class="icons">
                                 <a href="https://www.facebook.com/profile.php?id=100057294525660" target="_blank"><i id="social-fb" class="fa fa-facebook"></i></a>
-                                <a href="https://plus.google.com/" target="_blank"><i id="social-gp" class="fa fa-google-plus"></i></a>
+                                <a href="https://github.com/tedinn" target="_blank"><i class="fa fa-github"></i></a>
                                 <a href="https://www.instagram.com/teodoranikolaeva05/" target="_blank"><i id="social-in" class="fa fa-instagram"></i></a>
                             </div>
                         </div>
