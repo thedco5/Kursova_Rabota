@@ -31,21 +31,21 @@
 			<div class="card">
 				<img class="img card-img-top" src="../img/home_page.jpg" width="100%" alt="Responsive image">
 				<div class="card-img-overlay card-inverse text-center" style="margin-top: 20%;">
-					<h1 class="text-stroke text-white  text-capitalize">healthy food recipe</h1>
-					<p class="text-stroke text-white  font-italic">With supporting text below as a natural lead-in to additional content.</p>
-					<button class="btn btn-success"><a class="text-dark text-decoration-none" href="#categories_id">View more</a></button>
+					<h1 class="text-stroke text-white  text-capitalize"><?php echo $dict["healthy food recipe"];?></h1>
+					<h5 class="text-stroke text-white  font-italic"><?php echo $dict["What should I cook today?"];?></h5>
+					<button class="btn btn-success"><a class="text-dark text-decoration-none" href="#categories_id"><?php echo $dict["View more"];?></a></button>
 				</div>
 			</div>
 			<!-- CATEGORIES -->
 			<main>
 				<section class="categories">
-					<p id="categories_id">Категории</p>
+					<p id="categories_id"><?php echo $dict["categories"];?></p>
 
 					<a href="recipes.php?cat=main" class="meals text-reset">
 						<img src="../img/osnovni.png" alt="Основни ястия">
 						<div class="iconHold">
 							<img src="../img/osnovni_icon.png" alt="Основни ястия">
-							Основни ястия
+							<?php echo $dict["main dishes"];?>
 						</div>
 					</a>
 
@@ -53,7 +53,7 @@
 						<img src="../img/supi.png" alt="Супи">
 						<div class="iconHold">
 							<img src="../img/supi_icon.png" alt="Супи">
-							Супи
+							<?php echo $dict["soups"];?>
 						</div>
 					</a>
 
@@ -61,7 +61,7 @@
 						<img src="../img/salad.png" alt="Салати">
 						<div class="iconHold">
 							<img src="../img/salad_icon.png" alt="Салати">
-							Салати
+							<?php echo $dict["salads"];?>
 						</div>
 					</a>
 
@@ -69,7 +69,7 @@
 						<img src="../img/predqstiq.png" alt="Предястия">
 						<div class="iconHold">
 							<img src="../img/predqstiq_icon.png" alt="Предястия">
-							Предястия
+							<?php echo $dict["starters"];?>
 						</div>
 					</a>
 
@@ -77,7 +77,7 @@
 						<img src="../img/desert.png" alt="Десерти">
 						<div class="iconHold">
 							<img src="../img/desert_icon.png" alt="Десерти">
-							Десерти
+							<?php echo $dict["desserts"];?>
 						</div>
 					</a>
 				</section>
