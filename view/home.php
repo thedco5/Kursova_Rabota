@@ -1,4 +1,3 @@
-<!-- TRANSLATE -->
 <?php
 	include_once "../models/utils.php";
 	include_once "../models/lang.php";
@@ -28,7 +27,6 @@
 			<?php include_once "header.php"; ?>
 			<!-- HEADER -->
 			<main>
-				
 			</main>
 			<div class="card">
 				<img class="img card-img-top" src="../img/home_page.jpg" width="100%" alt="Responsive image">
@@ -89,7 +87,5 @@
 			<?php include "footer.php"; ?>
 			<!-- Footer -->
 		</div>
-		<!-- JS -->
-		<script src="../js/script.js"></script>
 	</body>
 </html>

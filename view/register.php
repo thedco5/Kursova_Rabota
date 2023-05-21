@@ -1,6 +1,6 @@
 <?php 
     include_once "../models/lang.php";
-    
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,20 +17,13 @@
     </head>
     <body>
         <!-- LANGUAGE CHOICE -->
-		<select class="language mr-2"style="background: none; border: none;" onchange="location=this.value;">
-			<option> <?php echo $dict["lang_abbr"]; ?> </option>
-			<option value="?lang=<?php
-									echo $dict["lang_abbr"] == "БГ" ? "en" : "bg";
-								?>">
-				<?php echo $dict["lang_abbr"] == "БГ" ? "EN" : "БГ"; ?>
-			</option>
-		</select>
+		
         <!-- MAIN PART -->
         <div class="center">
             <h2><?php echo $dict["Register"]; ?></h2>
-            <form action="#" method="post">
-                <!-- PHP CONTROLLER -->
-                <?php include_once "../controllers/register_controller.php"; ?>
+            <form method="post" action="#">
+                    <!-- PHP CONTROLLER -->
+                    <?php include_once "../controllers/register_controller.php"; ?>
                 <!-- PHP CONTROLLER -->
                 <div class="txt_field">
                     <input type="text" class="form-control" name="username" placeholder="<?php echo $dict["Username"]; ?>" required>
@@ -50,9 +43,9 @@
                 </div>
                 <input type="submit" name="submit" value="<?php echo $dict["Sign up"]; ?>">
                 <div class="signup_link">
-                    <?php echo $dict["already member"]; ?> 
-                    <a href="login.php"><?php echo $dict["Login"]; ?></a> <br>
-                    <a href="home.php"><?php echo $dict["Back to Start"]; ?></a>
+                <?php echo $dict["already member"]; ?> <a href="login.php"><?php echo $dict["Login"]; ?></a>
+                <br>
+                <a href="home.php"><?php echo $dict["Back to Start"]; ?></a>
                 </div>
             </form>
         </div>

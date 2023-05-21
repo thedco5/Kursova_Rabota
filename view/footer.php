@@ -1,7 +1,8 @@
 <?php 
     include_once "../models/lang.php";
+
 ?>
-<footer id="about_us">
+<footer>
 	<h4 class="about_us text-center pt-4 pb-4"> <?php echo $dict["about us"]; ?> </h4>
 	<div class="container text-center">
 		<!-- Grid row -->
