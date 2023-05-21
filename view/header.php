@@ -23,7 +23,7 @@
 				<button class="btn btn-outline mr-2"> <a class="text-dark text-decoration-none" href=
 					<?php
 						if (Utils::current_user() != null)
-							 echo "'../controllers/signout.php" . $lang_code . "'>" . $dict["log out"];
+							 echo "'../controllers/signout.php" . $lang_code . ">" . $dict["log out"];
 						else echo "'register.php" . $lang_code . "'>" . $dict["sign up"];
 					?> </a> </button>
 				<button class="btn btn-outline mr-2"> <a class="text-dark text-decoration-none" href=
