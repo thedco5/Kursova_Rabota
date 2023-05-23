@@ -43,7 +43,8 @@
         "soups" : "Супи",
         "salads" : "Салати",
         "starters" : "Предястия",
-        "desserts" : "Десерти"
+        "desserts" : "Десерти",
+        "email" : "Имейл"
     }],
     
     "en" : [{
@@ -90,6 +91,7 @@
         "soups" : "Soups",
         "salads" : "Salads",
         "starters" : "Starters",
-        "desserts" : "Desserts"
+        "desserts" : "Desserts",
+        "email" : "Email"
     }]
 }
