@@ -3,7 +3,7 @@
     include_once "../dbconn.php";
     include_once "../models/utils.php";
     if (isset($_POST["password"])) {
-        if (isset($_POST["username"])) {
+        if (isset($_POST["username"]) && strlen($_POST["username"]) != 0) {
             $stmt = $pdo->prepare("SELECT id, password, role, email FROM profiles WHERE username LIKE ?;");
             $stmt->execute([$_POST["username"]]);
             $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
