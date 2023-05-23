@@ -26,9 +26,15 @@
 			<form method="post" action="#">
 				<!-- PHP CONTROLLER -->
 				<?php include_once "../controllers/login_controller.php"; ?>
-                <!-- PHP CONTROLLER -->
-				<div class="txt_field">
+                		<!-- PHP CONTROLLER -->
+				<br>
+				<button id="swapper" class="btn btn-success" onclick="swap()"><?php echo $dict["email"]; ?>?</button>
+				<div class="txt_field" id="username-div">
 					<input type="text" class="form-control" name="username" placeholder="<?php echo $dict["Username"]; ?>" required>
+					<span></span>
+				</div>
+				<div class="txt_field" id="email-div" style="display: none">
+					<input type="email" class="form-control" name="email" placeholder="<?php echo $dict["email"]; ?>">
 					<span></span>
 				</div>
 				<div class="txt_field">
@@ -43,5 +49,17 @@
 				</div>
 			</form>
 		</div>
+		<script>
+			let button = document.getElementById("swapper")
+			var withEmail = false
+			let username_div = document.getElementById("username-div")
+			let email_div = document.getElementById("email-div")
+			function swap() {
+				withEmail = !withEmail
+				button.innerHTML = withEmail ? "<?php echo $dict["Username"]; ?>?" : "<?php echo $dict["email"]; ?>?"
+				username_div.style.display = withEmail ? "none" : "block"
+				email_div.style.display = withEmail ? "block" : "none"
+			}
+		</script>
 	</body>
 </html>
