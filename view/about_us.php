@@ -52,7 +52,7 @@ if (isset($_GET["lang"]))
                             <div class="icons">
                                 <a href="https://www.facebook.com/tedkosp" target="_blank"><i id="social-fb" class="fa fa-facebook"></i></a>
                                 <a href="https://github.com/thedco5" target="_blank"><i class="fa fa-github"></i></a>
-                                <a href="https://www.instagram.com" target="_blank"><i id="social-in" class="fa fa-instagram"></i></a>
+                                <a href="https://www.instagram.com/tedkop/" target="_blank"><i id="social-in" class="fa fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
