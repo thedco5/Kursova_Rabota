@@ -13,7 +13,7 @@
             echo "<div class='text-danger'> " . $dict["already exists"] . " </div>";
         else if(!(preg_match("/[a-zA-Z0-9_]+/", $_POST["username"])))
             echo "<div class='text-danger'> " . $dict["invalid username"] . " </div>";
-        else if (!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL))
+        else if (strlen($_POST["email"]) != 0 && !filter_var($_POST["email"], FILTER_VALIDATE_EMAIL))
             echo "<div class='text-danger'> " . $dict["invalid email"] . " </div>";
         else if(!(preg_match("/.{8,}/", $_POST["password"])))
             echo "<div class='text-danger'> " . $dict["invalid password"] . " </div>";
