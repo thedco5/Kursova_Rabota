@@ -10,6 +10,11 @@
         <title>Профил</title>
     </head>
     <body>
-        Profile page
+        Profile page <br>
+        <pre> <?php
+            include_once "../models/utils.php";
+            Utils::session();
+            var_dump($_SESSION);
+        ?> </pre>
     </body>
 </html>
