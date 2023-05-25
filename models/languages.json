@@ -54,6 +54,9 @@
         "Save" : "Запази",
         "Change" : "Промени",
         "Successfully saved!" : "Успешно запазено!",
+        "Administration" : "Администрация",
+        "ADMINISTRATION" : "АДМИНИСТРАЦИЯ",
+        "Profiles" : "Профили",
         "" : ""
     }],
     "en" : [{
@@ -110,6 +113,9 @@
         "Edit" : "Edit",
         "Save" : "Save",
         "Change" : "Change",
-        "Successfully saved!" : "Successfully saved!"
+        "Successfully saved!" : "Successfully saved!",
+        "Administration" : "Administration",
+        "ADMINISTRATION" : "ADMINISTRATION",
+        "Profiles" : "Profiles"
     }]
 }

@@ -32,6 +32,11 @@
 							echo "'profile.php" . $lang_code . "'>" . Utils::current_user();
 						else echo "'login.php" . $lang_code . "'>" . $dict["log in"];
 					?> </a> </button>
+				<?php if (isset($_SESSION["id"]) && $_SESSION["role"] == "admin") { ?>
+					<button class="btn btn-outline mr-2">
+						<a class="text-body text-decoration-none" href="admin.php"> <?php echo $dict["ADMINISTRATION"]; ?> </a>
+					</button>
+				<?php } ?>
 			</div>
 		</div>
 	</nav>
