@@ -1,4 +1,5 @@
-<?php include_once "../models/lang.php";
+<?php
+	include_once "../models/lang.php";
 	$lang_code = "";
 	if (isset($_GET["lang"]))
 		$lang_code = "?lang=" . $_GET["lang"];
@@ -19,18 +20,25 @@
 	</head>
 	<body>
 		<!-- LANGUAGE CHOICE -->
-		
+		<select class="language mr-2"style="background: none; border: none;" onchange="location=this.value;">
+			<option> <?php echo $dict["lang_abbr"]; ?> </option>
+			<option value="?lang=<?php
+									echo $dict["lang_abbr"] == "БГ" ? "en" : "bg";
+								?>">
+				<?php echo $dict["lang_abbr"] == "БГ" ? "EN" : "БГ"; ?>
+			</option>
+		</select>
 		<!-- MAIN FORM -->
 		<div class="center">
 			<h2> <?php echo $dict["Login"]; ?> </h2>
-			<form method="post" action="#">
+			<form action="#" method="post">
 				<!-- PHP CONTROLLER -->
-				<?php include_once "../controllers/login_controller.php"; ?>
-                		<!-- PHP CONTROLLER -->
+                <?php include_once "../controllers/login_controller.php"; ?>
+                <!-- PHP CONTROLLER -->
 				<br>
 				<button id="swapper" class="btn btn-success" onclick="swap()"><?php echo $dict["email"]; ?>?</button>
 				<div class="txt_field" id="username-div">
-					<input type="text" class="form-control" name="username" placeholder="<?php echo $dict["Username"]; ?>" required>
+					<input type="text" class="form-control" name="username" placeholder="<?php echo $dict["Username"]; ?>">
 					<span></span>
 				</div>
 				<div class="txt_field" id="email-div" style="display: none">
@@ -41,25 +49,27 @@
 					<input type="password" class="form-control" name="password" placeholder="<?php echo $dict["Password"]; ?>" required>
 					<span></span>
 				</div>
-				<!-- <a href="newPassword.php"> <?php echo $dict["Forgot password?"]; ?> </a><br><br> -->
+				<!--<a href="forgotten_password.php"> <?php echo $dict["Forgot password?"]; ?> </a><br><br>-->
 				<input type="submit" name="submit" value="<?php echo $dict["Log in"]; ?>">
 				<div class="signup_link">
-					<?php echo $dict["Not a member yet?"]; ?> <a href=<?php echo "'register.php" . $lang_code . "'>" . $dict["Register"];?> </a> <br>
-					<a href=<?php echo "'home.php" . $lang_code . "'>" . $dict["start"];?> </a>
+					<?php echo $dict["Not a member yet?"]; ?> 
+					<a href="register.php"> <?php echo $dict["Register"] . "?"; ?> </a> <br>
+                    <a href="home.php"><?php echo $dict["Back to Start"]; ?></a>
 				</div>
 			</form>
 		</div>
 		<script>
 			let button = document.getElementById("swapper")
-			var withEmail = false
-			let username_div = document.getElementById("username-div")
+            var withEmail = false
+            let username_div = document.getElementById("username-div")
 			let email_div = document.getElementById("email-div")
-			function swap() {
-				withEmail = !withEmail
-				button.innerHTML = withEmail ? "<?php echo $dict["Username"]; ?>?" : "<?php echo $dict["email"]; ?>?"
-				username_div.style.display = withEmail ? "none" : "block"
+            function swap() {
+                withEmail = !withEmail
+				// VAZHNO PREVOD!!!
+                button.innerHTML = withEmail ? "<?php echo $dict["Username"]; ?>?" : "<?php echo $dict["email"]; ?>?"
+                username_div.style.display = withEmail ? "none" : "block"
 				email_div.style.display = withEmail ? "block" : "none"
-			}
+            }
 		</script>
 	</body>
 </html>
