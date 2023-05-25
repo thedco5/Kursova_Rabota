@@ -1,0 +1,37 @@
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(109.7deg, rgb(202, 50, 50) 5.7%, rgb(252, 195, 12) 92.4%);
+  }
+
+  .form-container{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.432);
+  }
+
+  .form-container label{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #555;
+  }
+
+  .form-container input[type="text"],
+  .form-container textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+  }
+
+  .form-container input[type="file"] {
+    margin-top: 5px;
+}
+
+.form-container button[type="submit"] {
+    margin-top: 20px;
+    width: 20%;
+    padding: 10px;
+}
