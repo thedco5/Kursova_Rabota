@@ -35,3 +35,18 @@ body{
     width: 20%;
     padding: 10px;
 }
+
+.btn.btn-outline {
+  background-color: #FF6000;
+	border: transparent;
+	border-radius: 8px;
+	transition: 0.5s;
+}
+
+.btn.btn-outline:hover {
+	box-shadow: 1px 1px 7px rgba(0, 0, 0, 2);
+}
+
+.btn.btn-outline:active {
+	opacity: 0.7;
+}
