@@ -47,7 +47,7 @@
 				<h6 class="text-uppercase"><strong><?php echo $dict["contact"];?></strong></h6>
 				<p>
 					<i class="fa fa-envelope"></i>
-					info@example.com
+					food4foodies.cook@gmail.com
 				</p>
 			</div>
 			<!-- Grid column -->
