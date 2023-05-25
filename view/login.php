@@ -41,7 +41,7 @@
 					<input type="password" class="form-control" name="password" placeholder="<?php echo $dict["Password"]; ?>" required>
 					<span></span>
 				</div>
-				<a href="newPassword.php"> <?php echo $dict["Forgot password?"]; ?> </a><br><br>
+				<!-- <a href="newPassword.php"> <?php echo $dict["Forgot password?"]; ?> </a><br><br> -->
 				<input type="submit" name="submit" value="<?php echo $dict["Log in"]; ?>">
 				<div class="signup_link">
 					<?php echo $dict["Not a member yet?"]; ?> <a href=<?php echo "'register.php" . $lang_code . "'>" . $dict["Register"];?> </a> <br>
