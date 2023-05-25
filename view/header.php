@@ -1,7 +1,4 @@
-<?php 
-    include_once "../models/lang.php";
-
-?>
+<?php include_once "../models/lang.php"; ?>
 <header>
 	<nav class="navbar navbar-expand-sm navbar-light">
 		<div class="container-fluid ">
@@ -20,19 +17,19 @@
 						</option>
 					</select>
 				</div>
-				<button class="btn btn-outline mr-2"> <a class=" text-body text-decoration-none" href=<?php echo "'." . $lang_code . "'>" . $dict["start"]?> </a> </button>
-				<button class="btn btn-outline mr-2"> <a class=" text-body text-decoration-none" href=<?php echo "'recipes.php" . $lang_code . "'>" . $dict["recepies"]?> </a> </button>
-				<button class="btn btn-outline mr-2"> <a class="text-body text-decoration-none" href=<?php echo "'about_us.php" . $lang_code . "'>" . $dict["about us"]?> </a> </button>
+				<button class="btn btn-outline mr-2"> <a class=" text-body text-decoration-none" href="."> <?php echo $dict["start"]; ?> </a> </button>
+				<button class="btn btn-outline mr-2"> <a class=" text-body text-decoration-none" href="recipes.php"> <?php echo $dict["recepies"]; ?> </a> </button>
+				<button class="btn btn-outline mr-2"> <a class="text-body text-decoration-none" href="about_us.php"> <?php echo $dict["about us"]; ?> </a> </button>
 				<button class="btn btn-outline mr-2"> <a class="text-body text-decoration-none" href=
 					<?php
 						if (Utils::current_user() != null)
-							echo "'../controllers/signout.php" . $lang_code . "'>" . $dict["log out"];
+							 echo "'../controllers/signout.php" . $lang_code . "'>" . $dict["log out"];
 						else echo "'register.php" . $lang_code . "'>" . $dict["sign up"];
 					?> </a> </button>
 				<button class="btn btn-outline mr-2"> <a class="text-body text-decoration-none" href=
 					<?php
 						if (Utils::current_user())
-							 echo "'profile.php" . $lang_code . "'>" . Utils::current_user();
+							echo "'profile.php" . $lang_code . "'>" . Utils::current_user();
 						else echo "'login.php" . $lang_code . "'>" . $dict["log in"];
 					?> </a> </button>
 			</div>

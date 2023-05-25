@@ -1,3 +1,4 @@
+<!-- TRANSLATE -->
 <?php
 	include_once "../models/utils.php";
 	include_once "../models/lang.php";
@@ -27,6 +28,7 @@
 			<?php include_once "header.php"; ?>
 			<!-- HEADER -->
 			<main>
+				
 			</main>
 			<div class="card">
 				<img class="img card-img-top" src="../img/home_page.jpg" width="100%" alt="Responsive image">
@@ -73,7 +75,7 @@
 						</div>
 					</a>
 
-					<a href="recipes.php?cat=desert" class="meals text-reset">
+					<a href="recipes.php?cat=dessert" class="meals text-reset">
 						<img src="../img/desert.png" alt="Десерти">
 						<div class="iconHold">
 							<img src="../img/desert_icon.png" alt="Десерти">

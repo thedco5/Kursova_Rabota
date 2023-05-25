@@ -18,6 +18,7 @@
         "recepies" : "РЕЦЕПТИ",
         "categories" : "КАТЕГОРИИ",
         "Email" : "Имейл (незадължително)",
+        "email" : "Имейл",
         "Confirm Password" : "Потвърдете парола",
         "Sign up" : "Впиши",
         "already member" : "Вече сте член?",
@@ -44,9 +45,17 @@
         "salads" : "Салати",
         "starters" : "Предястия",
         "desserts" : "Десерти",
-        "email" : "Имейл"
+        "Profile" : "Профил",
+        "Role" : "Роля",
+        "user" : "потребител",
+        "admin" : "администратор",
+        "Basic Info" : "Основна Информация",
+        "Edit" : "Редактирай",
+        "Save" : "Запази",
+        "Change" : "Промени",
+        "Successfully saved!" : "Успешно запазено!",
+        "" : ""
     }],
-    
     "en" : [{
         "lang_code": "en",
         "lang_abbr": "EN",
@@ -66,6 +75,7 @@
         "recepies" : "RECIPES",
         "categories" : "CATEGORIES",
         "Email" : "Email (optional)",
+        "email" : "Email",
         "Confirm Password" : "Confirm password",
         "Sign up" : "Sign up",
         "already member" : "You already a member?",
@@ -92,6 +102,14 @@
         "salads" : "Salads",
         "starters" : "Starters",
         "desserts" : "Desserts",
-        "email" : "Email"
+        "Profile" : "Profile",
+        "Role" : "Role",
+        "user" : "user",
+        "admin" : "admin",
+        "Basic Info" : "Basic Info",
+        "Edit" : "Edit",
+        "Save" : "Save",
+        "Change" : "Change",
+        "Successfully saved!" : "Successfully saved!"
     }]
 }

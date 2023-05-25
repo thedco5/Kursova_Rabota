@@ -1,7 +1,4 @@
-<?php 
-    include_once "../models/lang.php";
-
-?>
+<?php include_once "../models/lang.php"; ?>
 <footer>
 	<h4 class="about_us text-center pt-4"><strong><?php echo $dict["about us"]; ?></strong></h4>
 	<div class="border border-dark mb-5"></div>
