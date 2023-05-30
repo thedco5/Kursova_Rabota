@@ -24,15 +24,27 @@
         static function error_message(int $n) : void {
             echo "<br> <span class='error'>There's an error! :: $n</span> <br>";
         }
-        static function get_recipe(int $id) : Recipe{
+        static function get_recipe(int $id) : Recipe {
+            include "../models/dbconn.php";
+            $info = $pdo->query("SELECT * FROM recipes WHERE id LIKE $id;")->fetchAll()[0];
+            $author_id = $info["author"];
+            $author = $pdo->query("SELECT username FROM profiles WHERE id LIKE $author_id;")->fetchAll()[0];
             $recipe = new Recipe();
             $recipe->id = $id;
+            $recipe->score = $info["score"];
+            $recipe->name = $info["name"];
+            $recipe->author = $author["username"];
+            $recipe->datetime = $info["datetime"];
+            $file = file_get_contents("../controllers/recipes/r$id.json");
+            $arr = @json_decode($file, true);
+            $recipe->ingredients = $arr["ingredients"];
+            $recipe->steps = $arr["steps"];
+            $recipe->category = $info["category"];
             return $recipe; 
         } 
     }
     class Recipe {
         public int $id, $score;
-        public String $name, $author, $date, $time, $json_file;
-        public array $ingredients, $steps;
+        public String $name, $author, $datetime, $ingredients, $steps, $category;
     }
 ?>

@@ -50,7 +50,7 @@
                         foreach ($el as $key=>$val)
                             echo "<td>" . $val . "</td>";
                         if ($el["role"] != "admin") {
-                            echo "<form action='delete_user.php' method='post'>";
+                            echo "<form action='../controllers/delete_user.php' method='post'>";
                             echo "<input type='text' name='id' value='" . $el["id"] . "' hidden>";
                             echo "<td> <input type='submit' value='Delete' class='btn btn-danger'></td>";
                             echo "</form>";

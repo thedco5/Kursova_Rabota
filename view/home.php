@@ -43,7 +43,7 @@
 				<section class="categories">
 					<p id="categories_id"><?php echo $dict["categories"];?></p>
 
-					<a href="recipes.php?cat=main" class="meals text-reset">
+					<a href="recipes.php?cat=main_course" class="meals text-reset">
 						<img src="../img/osnovni.png" alt="Основни ястия">
 						<div class="iconHold">
 							<img src="../img/osnovni_icon.png" alt="Основни ястия">
@@ -51,7 +51,7 @@
 						</div>
 					</a>
 
-					<a href="recipes.php?cat=soups" class="meals text-reset">
+					<a href="recipes.php?cat=soup" class="meals text-reset">
 						<img src="../img/supi.png" alt="Супи">
 						<div class="iconHold">
 							<img src="../img/supi_icon.png" alt="Супи">
@@ -59,7 +59,7 @@
 						</div>
 					</a>
 
-					<a href="recipes.php?cat=salads" class="meals text-reset">
+					<a href="recipes.php?cat=salad" class="meals text-reset">
 						<img src="../img/salad.png" alt="Салати">
 						<div class="iconHold">
 							<img src="../img/salad_icon.png" alt="Салати">

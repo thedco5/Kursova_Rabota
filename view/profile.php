@@ -58,7 +58,8 @@
             </tbody>
         </table>
         <div class="text-center">
-            <button class="btn btn-info" onclick="location.href='edit.php'"><?php echo $dict["Edit"]; ?></button>
+            <button class="btn btn-info" onclick="location.href='edit.php<?php echo $lang_code; ?>'"><?php echo $dict["Edit"]; ?></button>
+            <button class="btn btn-danger" onclick="location.href='delete_profile.php<?php echo $lang_code; ?>'"><?php echo $dict["Delete"]; ?></button>
         </div>
         <?php } ?>
     </body>

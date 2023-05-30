@@ -34,7 +34,7 @@
 					?> </a> </button>
 				<?php if (isset($_SESSION["id"]) && $_SESSION["role"] == "admin") { ?>
 					<button class="btn btn-outline mr-2">
-						<a class="text-body text-decoration-none" href="admin.php"> <?php echo $dict["ADMINISTRATION"]; ?> </a>
+						<a class="text-body text-decoration-none" href="admin.php<?php echo $lang_code; ?>"> <?php echo $dict["ADMINISTRATION"]; ?> </a>
 					</button>
 				<?php } ?>
 			</div>
