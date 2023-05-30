@@ -88,16 +88,11 @@ select {
 .meals {
 	margin-bottom: 50px;
 	display: inline-block;
-	position: relative;
-	/*changes the position of the element relative to the parent element and relative 
-	to itself and where it would usually be in the regular document flow of the page*/
 }
 
 .meals .iconHold {
-	display: block;
-	position: absolute;
+margin-top: -100px;
 	width: 100%;
-	bottom: -40px;
 }
 
 .iconHold img {
