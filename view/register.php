@@ -30,7 +30,7 @@
         <!-- MAIN PART -->
         <div class="center">
             <h2><?php echo $dict["Register"]; ?></h2>
-            <form action="#" method="post">
+            <form action="#<?php echo $lang_code; ?>" method="post">
                 <!-- PHP CONTROLLER -->
                 <?php include_once "../controllers/register_controller.php"; ?>
                 <!-- PHP CONTROLLER -->
@@ -53,8 +53,8 @@
                 <input type="submit" name="submit" value="<?php echo $dict["Sign up"]; ?>">
                 <div class="signup_link">
                     <?php echo $dict["already member"]; ?> 
-                    <a href="login.php"><?php echo $dict["Login"]; ?></a> <br>
-                    <a href="home.php"><?php echo $dict["Back to Start"]; ?></a>
+                    <a href="login.php<?php echo $lang_code; ?>"><?php echo $dict["Login"]; ?></a> <br>
+                    <a href="home.php<?php echo $lang_code; ?>"><?php echo $dict["Back to Start"]; ?></a>
                 </div>
             </form>
         </div>

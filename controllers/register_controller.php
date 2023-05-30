@@ -1,6 +1,7 @@
 <?php
     include_once "../models/dbconn.php";
     include_once "../models/utils.php";
+    include_once "../models/lang.php";
     if (isset($_POST["username"]) && isset($_POST["email"]) && isset($_POST["password"]) && isset($_POST["confirm"])) {
 
         $stmt = $pdo->prepare("SELECT id, username, role FROM profiles WHERE username LIKE ? OR email LIKE ? AND email NOT LIKE '';");
@@ -23,7 +24,7 @@
             $stmt = $pdo->prepare("INSERT INTO profiles (username, email, password) VALUES (?,?,?);");
             $stmt->execute([$_POST["username"], $_POST["email"], password_hash($_POST["password"], PASSWORD_DEFAULT)]);
             Utils::session();
-            header("Location: login.php");
+            header("Location: login.php$lang_code");
         }
     } 
 ?>

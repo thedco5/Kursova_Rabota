@@ -2,6 +2,7 @@
 <?php
     include_once "../models/dbconn.php";
     include_once "../models/utils.php";
+    include_once "../models/lang.php";
     if (isset($_POST["password"])) {
         if (isset($_POST["username"]) && strlen($_POST["username"]) != 0) {
             $stmt = $pdo->prepare("SELECT id, password, role, email FROM profiles WHERE username LIKE ?;");
@@ -17,7 +18,7 @@
                     $_SESSION["username"] = $_POST["username"];
                     $_SESSION["role"] = $res[0]["role"];
                     $_SESSION["email"] = $res[0]["email"];
-                    header("Location: home.php");
+                    header("Location: home.php$lang_code");
                 } else echo "<div class='text-danger centered'> Wrong password! </div>";
             }
         } else if (isset($_POST["email"])) {
@@ -34,7 +35,7 @@
                     $_SESSION["username"] = $res[0]["username"];
                     $_SESSION["role"] = $res[0]["role"];
                     $_SESSION["email"] = $_POST["email"];
-                    header("Location: home.php");
+                    header("Location: home.php$lang_code");
                 } else echo "<div class='text-danger centered'> Wrong password! </div>";
             }
         }

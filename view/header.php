@@ -17,9 +17,9 @@
 						</option>
 					</select>
 				</div>
-				<button class="btn btn-outline mr-2"> <a class=" text-body text-decoration-none" href="."> <?php echo $dict["start"]; ?> </a> </button>
-				<button class="btn btn-outline mr-2"> <a class=" text-body text-decoration-none" href="recipes.php"> <?php echo $dict["recepies"]; ?> </a> </button>
-				<button class="btn btn-outline mr-2"> <a class="text-body text-decoration-none" href="about_us.php"> <?php echo $dict["about us"]; ?> </a> </button>
+				<button class="btn btn-outline mr-2"> <a class=" text-body text-decoration-none" href=<?php echo "'." . $lang_code . "'>" . $dict["start"]; ?> </a> </button>
+				<button class="btn btn-outline mr-2"> <a class=" text-body text-decoration-none" href=<?php echo "'recipes.php" . $lang_code . "'>" . $dict["recepies"]?> </a> </button>
+				<button class="btn btn-outline mr-2"> <a class="text-body text-decoration-none" href=<?php echo "'about_us.php" . $lang_code . "'>" . $dict["about us"]?> </a> </button>
 				<button class="btn btn-outline mr-2"> <a class="text-body text-decoration-none" href=
 					<?php
 						if (Utils::current_user() != null)
@@ -34,7 +34,7 @@
 					?> </a> </button>
 				<?php if (isset($_SESSION["id"]) && $_SESSION["role"] == "admin") { ?>
 					<button class="btn btn-outline mr-2">
-						<a class="text-body text-decoration-none" href="admin.php"> <?php echo $dict["ADMINISTRATION"]; ?> </a>
+						<a class="text-body text-decoration-none" href="admin.php<?php echo $lang_code; ?>"> <?php echo $dict["ADMINISTRATION"]; ?> </a>
 					</button>
 				<?php } ?>
 			</div>
