@@ -28,8 +28,7 @@
 			<?php include_once "header.php"; ?>
 			<!-- HEADER -->
 			<main>
-				
-			</main>
+			<section>
 			<div class="card">
 				<img class="img card-img-top" src="../img/home_page.jpg" width="100%" alt="Responsive image">
 				<div class="card-img-overlay card-inverse text-center" style="margin-top: 20%;">
@@ -38,8 +37,9 @@
 					<button class="btn btn-success"><a class="text-dark text-decoration-none" href="#categories_id"><?php echo $dict["View more"];?></a></button>
 				</div>
 			</div>
+			</section>
 			<!-- CATEGORIES -->
-			<main>
+			
 				<section class="categories">
 					<p id="categories_id"><?php echo $dict["categories"];?></p>
 
