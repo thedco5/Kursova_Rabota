@@ -38,7 +38,7 @@
             </thead>
             <?php
                 include_once "../models/dbconn.php";
-                $array = $pdo->query("SELECT * FROM profiles")->fetchAll(PDO::FETCH_ASSOC);
+                $array = $pdo->query("SELECT id, username, email, recipes_count, password, role FROM profiles LEFT JOIN (SELECT COUNT(id) as recipes_count, author FROM recipes GROUP BY author) AS t ON t.author LIKE profiles.id;")->fetchAll(PDO::FETCH_ASSOC);
                 if (count($array) != 0) {
                     echo "<thead> <tr>";
                     foreach ($array[0] as $key=>$val)
