@@ -25,7 +25,7 @@
             }
 ?>
 <div class="col-md-3">
-    <a class="text-body text-decoration-none" href="<?php echo $lang_code == "" ? "?id=$id" : $lang_code . "&id=$id"; ?>" title="Оризови кюфтета с пилешко месо">
+    <a class="text-body text-decoration-none" href="<?php echo $lang_code == "" ? "?id=$id" : $lang_code . "&id=$id"; ?>">
         <div class="recipe-container border mt-5">
             <div class="heading mt-1">
                 <div class="title-h2"><?php echo $recipe->name; ?></div>
