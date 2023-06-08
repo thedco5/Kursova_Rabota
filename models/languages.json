@@ -75,7 +75,7 @@
         "starter" : "Предястие",
         "dessert" : "Десерт",
         "Author" : "Автор",
-        "" : ""
+        "Score" : "Оценка"
     }],
     "en" : [{
         "lang_code": "en",
@@ -152,6 +152,7 @@
         "salad" : "Salad",
         "starter" : "Starter",
         "dessert" : "Dessert",
-        "Author" : "Author"
+        "Author" : "Author",
+        "Score" : "Score"
     }]
 }
