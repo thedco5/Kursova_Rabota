@@ -10,7 +10,15 @@
         $score = $recipe->score + 1;
         $id = $_GET["id"];
         $pdo->query("UPDATE recipes SET score = $score WHERE id = $id;");
+        Utils::session();
+        if ($_SESSION["id"] == $recipe->author_id) {
+            echo "<form action='../controllers/delete_recipe.php' method='post'>";
+            echo "<input type='text' name='id' value='" . $recipe->id . "' hidden>";
+            echo "<td> <input type='submit' value='Delete' class='btn btn-danger'></td>";
+            echo "</form>";
 ?>
+
+<?php   } ?>
 
 <b> <?php echo $dict["Author"] . ": "; ?> </b>
 <?php echo $recipe->author; ?> 

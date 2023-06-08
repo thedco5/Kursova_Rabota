@@ -30,6 +30,7 @@
             $author_id = $info["author"];
             $author = $pdo->query("SELECT username FROM profiles WHERE id LIKE $author_id;")->fetchAll()[0];
             $recipe = new Recipe();
+            $recipe->author_id = $author_id;
             $recipe->id = $id;
             $recipe->score = $info["score"];
             $recipe->name = $info["name"];
@@ -44,7 +45,7 @@
         } 
     }
     class Recipe {
-        public int $id, $score;
+        public int $id, $score, $author_id;
         public String $name, $author, $datetime, $ingredients, $steps, $category;
     }
 ?>
