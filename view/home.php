@@ -39,7 +39,6 @@
 			</div>
 			</section>
 			<!-- CATEGORIES -->
-			
 				<section class="categories">
 					<p id="categories_id"><?php echo $dict["categories"];?></p>
 
