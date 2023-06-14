@@ -1,31 +1,19 @@
 <?php
-
-include_once "../models/dbconn.php";
-
-include_once "../models/utils.php";
-
-include_once "../models/lang.php";
-
-$stmt = $pdo->prepare("SELECT * FROM recipes WHERE id LIKE ?;");
-
-$stmt->execute([$_GET["id"]]);
-
-$arr = $stmt->fetchAll();
-
-if (count($arr) == 1) {
-
-    $recipe = Utils::get_recipe($_GET["id"]);
-
-    $score = $recipe->score + 1;
-
-    $id = $_GET["id"];
-
-    $pdo->query("UPDATE recipes SET score = $score WHERE id = $id;");
-
+    include_once "../models/dbconn.php";
+    include_once "../models/utils.php";
+    include_once "../models/lang.php";
+    $stmt = $pdo->prepare("SELECT * FROM recipes WHERE id LIKE ?;");
+    $stmt->execute([$_GET["id"]]);
+    $arr = $stmt->fetchAll();
+    if (count($arr) == 1) {
+        $recipe = Utils::get_recipe($_GET["id"]);
+        $score = $recipe->score + 1;
+        $id = $_GET["id"];
+        $pdo->query("UPDATE recipes SET score = $score WHERE id = $id;");
+        Utils::session();
 ?>
 
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="<?php echo $dict["lang_code"]; ?>">
 
     <head>
@@ -75,7 +63,7 @@ if (count($arr) == 1) {
 
                             </ul>
                     </div>
-        
+
                     <div class="col-md-6">
                         <h3><?php echo $dict['Instructions'] . ": "; ?></h3>
                         <ul class="list-group">
@@ -88,7 +76,7 @@ if (count($arr) == 1) {
 
         <?php
          Utils::session();
-         if ($_SESSION["id"] == $recipe->author_id) {
+         if (@$_SESSION["id"] == $recipe->author_id) {
              echo "<form action='../controllers/delete_recipe.php' method='post'>";
              echo "<input type='text' name='id' value='" . $recipe->id . "' hidden>";
              echo "<div class='text-center'>";
@@ -100,4 +88,5 @@ if (count($arr) == 1) {
 
     </body>
     </html>
+
 <?php } ?>

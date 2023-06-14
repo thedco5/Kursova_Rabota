@@ -54,12 +54,11 @@ DROP TABLE IF EXISTS `recipes`;
 CREATE TABLE `recipes` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(64) NOT NULL,
-  `author` INT NOT NULL,
+  `author` varchar(16) DEFAULT '<unknown>',
   `score` int NOT NULL DEFAULT '0',
   `datetime` datetime DEFAULT NULL,
   `category` enum('main_course','soup','salad','starter','dessert') DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  FOREIGH KEY (`author`) REFERENCES `profiles`(`id`)
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 

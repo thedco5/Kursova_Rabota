@@ -75,7 +75,10 @@
         "starter" : "Предястие",
         "dessert" : "Десерт",
         "Author" : "Автор",
-        "Score" : "Оценка"
+        "Show my recipes" : "Покажи рецептите ми",
+        "Show all recipes" : "Покажи всички",
+        "Score" : "Оценка",
+        "" : ""
     }],
     "en" : [{
         "lang_code": "en",
@@ -153,6 +156,8 @@
         "starter" : "Starter",
         "dessert" : "Dessert",
         "Author" : "Author",
+        "Show my recipes" : "Show my recipes",
+        "Show all recipes" : "Show all recipes",
         "Score" : "Score"
     }]
 }
