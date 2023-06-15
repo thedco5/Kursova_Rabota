@@ -36,7 +36,7 @@
 
                 <div class="col-md-6">
                     <div class="recipe-img">
-                        <img src="../img/recepie_details.png" alt="" width="100%" height="auto">
+                        <img src="../img/recipe1.jpg" alt="" width="100%" height="auto">
                     </div>
                 </div>
 
