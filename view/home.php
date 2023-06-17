@@ -32,10 +32,10 @@
 				<section>
 					<div class="card">
 						<img class="img card-img-top" src="../img/home_page.jpg" width="100%" alt="Responsive image">
-						<div class="card-img-overlay card-inverse text-center" style="margin-top: 20%;">
+						<div class="card-img-overlay text-center" style="margin-top: 20%;">
 							<h1 class="text-stroke text-white  text-capitalize"><?php echo $dict["healthy food recipe"];?></h1>
 							<h5 class="text-stroke text-white  font-italic"><?php echo $dict["What should I cook today?"];?></h5>
-							<button class="btn btn-success"><a class="text-dark text-decoration-none" href="#categories_id"><?php echo $dict["View more"];?></a></button>
+							<button class="btn btn-success"><a class="text-body text-decoration-none" href="#categories_id"><?php echo $dict["View more"];?></a></button>
 						</div>
 					</div>
 				</section>
