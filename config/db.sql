@@ -32,7 +32,7 @@ CREATE TABLE `profiles` (
   `role` enum('admin','user') NOT NULL DEFAULT 'user',
   PRIMARY KEY (`id`),
   UNIQUE KEY `username_UNIQUE` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -41,6 +41,7 @@ CREATE TABLE `profiles` (
 
 LOCK TABLES `profiles` WRITE;
 /*!40000 ALTER TABLE `profiles` DISABLE KEYS */;
+INSERT INTO `profiles` VALUES (0,'admin','admin@ema.il','$2y$10$wJQ7kReDgxzelGAmMB4BIu0/cIsg0ncqHmZn5royn2oJ0I0m39aSq','admin'),(22,'tedkop','','$2y$10$SGbttmdsNOqE8D2avEylAe0sLNtZatpyPO3SxPkNgqZy3zFcnJBRa','user'),(28,'test','','$2y$10$3LsTcy4g/jGKNbTRRPK7qu/IshOB4Zi/s4B0YNY.jJ/KpH7xpw6ty','user');
 /*!40000 ALTER TABLE `profiles` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -54,12 +55,14 @@ DROP TABLE IF EXISTS `recipes`;
 CREATE TABLE `recipes` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(64) NOT NULL,
-  `author` varchar(16) DEFAULT '<unknown>',
+  `author` int NOT NULL,
   `score` int NOT NULL DEFAULT '0',
   `datetime` datetime DEFAULT NULL,
   `category` enum('main_course','soup','salad','starter','dessert') DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  PRIMARY KEY (`id`),
+  KEY `author_idx` (`author`),
+  CONSTRAINT `author` FOREIGN KEY (`author`) REFERENCES `profiles` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -68,6 +71,7 @@ CREATE TABLE `recipes` (
 
 LOCK TABLES `recipes` WRITE;
 /*!40000 ALTER TABLE `recipes` DISABLE KEYS */;
+INSERT INTO `recipes` VALUES (23,'asdvfbfdbf2',22,4,'2023-05-30 19:00:00','main_course'),(25,'Кюфтета',22,25,'2023-05-30 19:29:24','main_course'),(30,'qwerty',28,1,'2023-05-31 07:28:47','main_course');
 /*!40000 ALTER TABLE `recipes` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -80,4 +84,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-05-17 13:34:20
+-- Dump completed on 2023-06-17 12:17:57
