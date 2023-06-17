@@ -1,17 +1,18 @@
-a:hover {
+a:hover{
     opacity: 0.8;
 }
 
-.btn.btn-danger {
-    border: transparent;
-    border-radius: 5px;
-    transition: 0.5s;
-}
-
-.btn.btn-danger:hover {
-    box-shadow: 1px 1px 7px rgba(0, 0, 0, 2);
-}
-
-.btn.btn-danger:active {
-    opacity: 0.7;
-}
+.btn.btn-primary, .btn.btn-danger{
+      border: transparent;
+      border-radius: 5px;
+      transition:all 0.5s;
+  }
+  
+  .btn:hover {
+      box-shadow: 1px 1px 7px rgba(0, 0, 0, 2);
+  }
+  
+  .btn:active {
+      opacity: 0.7;
+  } 
+  
