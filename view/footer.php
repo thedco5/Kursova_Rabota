@@ -9,7 +9,7 @@
 			<!-- Grid column -->
 
 			<!-- Grid column -->
-			<div class="col-4">
+			<div class="col-md-4">
 				<!-- Links -->
 				<h6 class="text-uppercase">
 					<strong><?php echo $dict["menu"];?></strong>
@@ -27,7 +27,7 @@
 			<!-- Grid column -->
 
 			<!-- Grid column -->
-			<div class="col-4">
+			<div class="col-md-4">
 				<!-- Links -->
 				<h6 class="text-uppercase">
 					<strong><?php echo $dict["account"];?></strong>
@@ -42,7 +42,7 @@
 			<!-- Grid column -->
 
 			<!-- Grid column -->
-			<div class="col-4">
+			<div class="col-md-4">
 				<!-- Links -->
 				<h6 class="text-uppercase"><strong><?php echo $dict["contact"];?></strong></h6>
 				<p>
@@ -58,7 +58,7 @@
 	<!-- Section: Links  -->
 
 	<!-- Copyright -->
-	<div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0.05);">
+	<div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0.09);">
 		<p class="pt-2 text-body">&copy;2023 Food4Foodies.com. <?php echo $dict["all rights reserved"]; ?>. </p>
 	</div>
 	<!-- Copyright -->
