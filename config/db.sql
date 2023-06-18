@@ -36,16 +36,6 @@ CREATE TABLE `profiles` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `profiles`
---
-
-LOCK TABLES `profiles` WRITE;
-/*!40000 ALTER TABLE `profiles` DISABLE KEYS */;
-INSERT INTO `profiles` VALUES (0,'admin','admin@ema.il','$2y$10$wJQ7kReDgxzelGAmMB4BIu0/cIsg0ncqHmZn5royn2oJ0I0m39aSq','admin'),(22,'tedkop','','$2y$10$SGbttmdsNOqE8D2avEylAe0sLNtZatpyPO3SxPkNgqZy3zFcnJBRa','user'),(28,'test','','$2y$10$3LsTcy4g/jGKNbTRRPK7qu/IshOB4Zi/s4B0YNY.jJ/KpH7xpw6ty','user');
-/*!40000 ALTER TABLE `profiles` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `recipes`
 --
 
@@ -65,15 +55,6 @@ CREATE TABLE `recipes` (
 ) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `recipes`
---
-
-LOCK TABLES `recipes` WRITE;
-/*!40000 ALTER TABLE `recipes` DISABLE KEYS */;
-INSERT INTO `recipes` VALUES (23,'asdvfbfdbf2',22,4,'2023-05-30 19:00:00','main_course'),(25,'Кюфтета',22,25,'2023-05-30 19:29:24','main_course'),(30,'qwerty',28,1,'2023-05-31 07:28:47','main_course');
-/*!40000 ALTER TABLE `recipes` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
